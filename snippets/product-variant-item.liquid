@@ -17,7 +17,7 @@
             {%- assign has_alternate_image = false -%}
         {%- endif -%}
 
-        <a href="{{ variant.url | within: collection }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}">
+        <a href="{{ variant.url | within: collection | append: '#Media' | append: variant.featured_media.id }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}">
             {%- if use_horizontal -%}
                 {%- assign max_width = 125 -%}
             {%- else -%}
@@ -98,9 +98,9 @@
                 {%- endif -%}
 
                 <h2 class="ProductItem__Title Heading Heading--noTransform u-h5">
-                    <a href="{{ variant.url | within: collection }}">{{ product.title }}</a>
+                    <a href="{{ variant.url | within: collection | append: '#Media' | append: variant.featured_media.id }}">{{ product.title }}</a>
                 </h2>
-                <h3 style="margin-bottom: 3px;"><a href="{{ variant.url | within: collection }}">{{ split_tag }} - {{ variant_option }}</a></h3>
+                <h3 style="margin-bottom: 3px;"><a href="{{ variant.url | within: collection | append: '#Media' | append: variant.featured_media.id }}">{{ split_tag }} - {{ variant_option }}</a></h3>
 
                 {%- if settings.show_product_rating -%}
                     {%- unless use_horizontal -%}
