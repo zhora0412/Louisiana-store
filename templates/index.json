@@ -1,0 +1,295 @@
+{
+  "sections": {
+    "1633026299192b8d87": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "xlarge",
+        "image": "shopify:\/\/shop_images\/20240111_Rammer_til_Louisiana_plakater_eg_og_sort.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/20240111_Louisiana_rammer.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "subheading": "",
+        "title": "plakater fra tidligere & aktuelle udstillinger",
+        "content": "",
+        "cta_text": "Køb plakater her",
+        "cta_link": "shopify:\/\/collections\/louisiana-plakater-og-tryk"
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "featured-collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "nyheder",
+            "title": "",
+            "grid_items_count": 4,
+            "button_text": "Se alle nyheder her"
+          }
+        },
+        "98a25c8c-6c74-4292-9827-1f5d07ddd9ab": {
+          "type": "collection",
+          "settings": {
+            "collection": "alle-gaver",
+            "title": "",
+            "grid_items_count": 4,
+            "button_text": "Se alle gaveidéer her"
+          }
+        }
+      },
+      "block_order": [
+        "featured-collection-0",
+        "98a25c8c-6c74-4292-9827-1f5d07ddd9ab"
+      ],
+      "settings": {
+        "title": "Bliv inspireret og se det nyeste her",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": true,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "1633030778c40ed91f": {
+      "type": "featured-collections",
+      "blocks": {
+        "1633030778c40ed91f-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "louisiana-plakater-og-tryk",
+            "title": "Plakater",
+            "grid_items_count": 6,
+            "button_text": "Se alle Louisiana plakater"
+          }
+        },
+        "90614d88-69f8-4ca6-bc89-844cc947e6a7": {
+          "type": "collection",
+          "settings": {
+            "collection": "louisiana-prints",
+            "title": "Print",
+            "grid_items_count": 6,
+            "button_text": "Se udvalgte Louisiana print"
+          }
+        }
+      },
+      "block_order": [
+        "1633030778c40ed91f-0",
+        "90614d88-69f8-4ca6-bc89-844cc947e6a7"
+      ],
+      "settings": {
+        "title": "Louisiana plakater og print",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": true,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 3
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/20231011_Designudsalg_30_procent.jpg",
+            "image_alignment": "bottom center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Medlemmer får 10% ekstra",
+            "button_text": "Køb nedsatte varer",
+            "button_link": "shopify:\/\/collections\/tilbud",
+            "apply_overlay": false
+          }
+        },
+        "collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/20231219_huer_louisiana_design_butik.jpg",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Huer, handsker og halstørklæder",
+            "button_text": "Køb huer etc. her",
+            "button_link": "shopify:\/\/collections\/huer-torklaeder-og-vanter",
+            "apply_overlay": false
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/20231219_Det_uerstattelige_menneske_udstilling_9ae08f1c-38ff-4cfc-9ebd-229e0bc1c00b.jpg",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Aktuelle publikationer og plakater",
+            "button_text": "Se det hele her",
+            "button_link": "shopify:\/\/collections\/udstillingsaktuelle-louisiana-plakater-og-boger",
+            "apply_overlay": true
+          }
+        }
+      },
+      "block_order": [
+        "collection-1",
+        "collection-0",
+        "collection-2"
+      ],
+      "settings": {
+        "image_size": "square",
+        "add_spacing": true,
+        "expand_collection": false,
+        "stack_on_mobile": false,
+        "text_color": "#ffffff",
+        "button_color": "#363636"
+      }
+    },
+    "featured-product": {
+      "type": "featured-product",
+      "blocks": {
+        "product-meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "ff40ade6-80b5-4d09-ae4c-521c6e7c62c1": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "variant-selector": {
+          "type": "variant_selector",
+          "disabled": true,
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "buy-buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        },
+        "a8a92030-6559-4bb6-81db-a9858574abab": {
+          "type": "inventory",
+          "settings": {
+            "inventory_quantity_threshold": 0
+          }
+        }
+      },
+      "block_order": [
+        "product-meta",
+        "ff40ade6-80b5-4d09-ae4c-521c6e7c62c1",
+        "variant-selector",
+        "buy-buttons",
+        "a8a92030-6559-4bb6-81db-a9858574abab"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Flygter han? Falder han?",
+        "show_headings_on_mobile": true,
+        "product": "ragnar-kjartansson-bangemand"
+      }
+    },
+    "1633030817b11d22ed": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "normal",
+        "image": "shopify:\/\/shop_images\/Louisiana_Planeter_i_haven.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Louisiana_Planeter_i_haven_750x1000_3686e0c6-6a88-4732-894f-ec72ef18c15c.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 19,
+        "subheading": "Bliv medlem",
+        "title": "Køb klubkort og få 10% rabat",
+        "content": "<p>Køber du et Louisiana klubkort, vil du udover fri entre, få 10% rabat på dine køb i Louisiana Design Butik – på museet og online.<\/p><p><\/p>",
+        "cta_text": "Køb klubkort her",
+        "cta_link": "https:\/\/louisiana.dk\/bliv-medlem\/"
+      }
+    },
+    "shop-the-look": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look-0": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rammer_til_Louisiana_plakater_i_specialmal.jpg",
+            "dot_style": "light",
+            "product_1": "simon-evans-everything-i-have-louisiana-plakat",
+            "product_1_horizontal_position": 29,
+            "product_1_vertical_position": 29,
+            "product_2": "mamma-andersson-humdrum-day-2013",
+            "product_2_horizontal_position": 73,
+            "product_2_vertical_position": 18,
+            "product_3": "marsden-hartley-mont-saint-victoire-1927-louisiana-plakat",
+            "product_3_horizontal_position": 61,
+            "product_3_vertical_position": 65
+          }
+        }
+      },
+      "block_order": [
+        "look-0"
+      ],
+      "settings": {
+        "subheading": "Kun online",
+        "title": "Rammer til Louisiana plakater i specialmål",
+        "show_mobile_product_info": false
+      }
+    },
+    "1633030973ab68a3e6": {
+      "type": "newsletter",
+      "settings": {
+        "section_size": "normal",
+        "image": "shopify:\/\/shop_images\/Forside_NB_foto_1500x800_butik_2020_marts.jpg",
+        "text_color": "#ffffff",
+        "button_color": "#000000",
+        "subheading": "",
+        "title": "Modtag vores nyhedsbrev",
+        "content": "<p>Når du tilmelder dig, vil du få information om vores nøje udvalgte designs. Vi tipper dig også, når vi har særlig gode tilbud.<\/p>"
+      }
+    },
+    "1633030976b4774ab5": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "@louisianabutik",
+        "title": "FÅ INSPIRATION FRA VORES INSTAGRAM",
+        "html": "<div id=\"insta-feed\"><\/div>\n\n<a href=\"https:\/\/www.instagram.com\/louisianabutik\/\" target=\"_blank\" class=\"instalink\">Mere inspiration fra instagram<\/a>"
+      }
+    },
+    "16330310320b99ab8c": {
+      "type": "featured-video",
+      "settings": {
+        "section_size": "small",
+        "text_color": "#ffffff",
+        "subheading": "Tak for dit køb",
+        "title": "Det går pengene til",
+        "image": "shopify:\/\/shop_images\/kim3292-edit-crop.jpg",
+        "video_url": "https:\/\/youtu.be\/qK-KQIkzxig"
+      }
+    }
+  },
+  "order": [
+    "1633026299192b8d87",
+    "featured-collections",
+    "1633030778c40ed91f",
+    "collection-list",
+    "featured-product",
+    "1633030817b11d22ed",
+    "shop-the-look",
+    "1633030973ab68a3e6",
+    "1633030976b4774ab5",
+    "16330310320b99ab8c"
+  ]
+}

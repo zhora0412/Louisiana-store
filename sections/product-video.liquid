@@ -1,0 +1,37 @@
+{% if product.metafields.my_fields.product_video != blank %}
+  <section class="Section Section--featuredVideo" id="section-{{ section.id }}">
+    <div class="ImageHero" style="padding: {{ section.settings.padding }}px 0px"> 
+        <video width="100%" controls src="{{product.metafields.my_fields.product_video}}">
+          <source src="{{product.metafields.my_fields.product_video}}" type="video/mp4">
+        </video>
+    </div>
+  </section>
+{% endif %}
+
+<style>
+  {% comment %} #section-{{ section.id }} {% endcomment %}
+</style>
+
+{% schema %}
+{
+  "name": "Product video",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Top/bottom spaces",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "category": "Video",
+      "name": "Product video",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

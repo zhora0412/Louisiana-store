@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {
+        "show_shipping_estimator": true,
+        "shipping_estimator_default_country": "United States"
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "DU HAR FOR NYLIGT SET PÅ",
+        "show_product_info": true,
+        "show_vendor": true,
+        "show_color_swatch": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "recently-viewed-products"
+  ]
+}

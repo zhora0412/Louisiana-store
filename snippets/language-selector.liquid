@@ -1,0 +1,14 @@
+<ul class="LanguageList">
+  <li class="LanguageList__Item Link {{ class }}">{{ request.locale.iso_code }}
+    <span class="LanguageList__Icon hidden-desk">{%- render 'icon' with 'language-arrow-mobile' -%}</span>
+    <span class="LanguageList__Icon hidden-pocket">{%- render 'icon' with 'arrow-bottom' -%}</span>
+  </li>
+
+  {%- for locale in shop.published_locales -%}
+    {%- unless request.locale.iso_code == locale.iso_code -%}
+      <li class="LanguageList__Item">
+        <a class="Link Link--underlineNative" href="{{ locale.root_url }}">{{ locale.iso_code }}</a>
+      </li>
+    {%- endunless -%}
+  {%- endfor -%}
+</ul>

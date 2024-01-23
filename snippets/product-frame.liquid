@@ -1,0 +1,4 @@
+{% comment %}Frame module{% endcomment %}
+{%- if product.tags contains 'has_louisiana_frame' or product.tags contains 'has_novictus_frame' -%}
+    {%- render 'frame-module' -%}
+{%- endif -%}

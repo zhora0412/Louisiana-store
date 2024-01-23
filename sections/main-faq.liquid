@@ -1,0 +1,140 @@
+{%- assign has_section_separator = false -%}
+
+{%- for block in section.blocks -%}
+  {%- if block.type == 'separator' or block.settings.sep_title != blank -%}
+    {%- assign has_section_separator = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- capture faq_content -%}
+  <div class="Faq">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'separator' -%}
+          <h2 class="Faq__Section Heading u-h3 Text--bold" {{ block.shopify_attributes }}>
+            <span class="Anchor" id="block-{{ block.id }}"></span>
+            {{- block.settings.title | escape -}}
+          </h2>
+
+        {%- when 'question' -%}
+          {%- if block.settings.sep_title != blank -%}
+            <h2 class="Faq__Section Heading u-h3 Text--bold" {{ block.shopify_attributes }}>
+              <span class="Anchor" id="block-{{ block.id }}"></span>
+              {{- block.settings.sep_title | escape -}}
+            </h2>
+          {%- endif -%}
+
+          <div class="Faq__Item {% if section.blocks[forloop.index].type == 'separator' or forloop.last %}Faq__Item--lastOfSection{% endif %}" aria-expanded="false" {{ block.shopify_attributes }}>
+
+            <div class="Faq__ItemWrapper">
+              <button class="Faq__Question u-h4">
+                {{ block.settings.title | escape }}
+                <span class="Faq__Icon">{% render 'icon' with 'plus' %}</span>
+              </button>
+
+              <div class="Faq__AnswerWrapper" aria-hidden="true">
+                <div class="Faq__Answer Rte Text--subdued">
+                  {{ block.settings.answer }}
+                </div>
+              </div>
+            </div>
+          </div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+{%- endcapture -%}
+
+<section class="Section Section--faq" data-section-type="faq" data-section-id="{{ section.id }}">
+  <div class="Container Container--narrow">
+    <header class="PageHeader">
+      <div class="SectionHeader SectionHeader--center">
+        <h1 class="SectionHeader__Heading Heading u-h1 Text--bold">{{ page.title }}</h1>
+      </div>
+    </header>
+
+    <div class="PageContent {% unless has_section_separator %}PageContent--narrow{% endunless %}">
+      {%- if has_section_separator -%}
+        <div class="PageLayout">
+          <div class="PageLayout__Section PageLayout__Section--secondary PageLayout__Section--sticky hidden-phone">
+            <ol class="FaqSummary">
+              {%- assign faq_separator_count = 0 -%}
+
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'separator' or block.settings.sep_title != blank -%}
+                  <li class="FaqSummary__Item {% if faq_separator_count == 0 %}is-active{% endif %}">
+                    <a href="#block-{{ block.id }}" class="FaqSummary__Link u-h5" data-offset="80">
+                      <span class="FaqSummary__LinkLabel">
+                        {%- if block.settings.sep_title != blank -%}
+                          {{ block.settings.sep_title | escape }}
+                        {%- else -%}
+                          {{ block.settings.title | escape }}
+                        {%- endif -%}
+
+                      </span>
+                    </a>
+                  </li>
+
+                  {%- assign faq_separator_count = faq_separator_count | plus: 1 -%}
+                {%- endif -%}
+              {%- endfor -%}
+            </ol>
+          </div>
+
+          <div class="PageLayout__Section">
+            {{- faq_content -}}
+          </div>
+        </div>
+      {%- else -%}
+        {{- faq_content -}}
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "separator",
+      "name": "Section separator",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Default"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "sep_title",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      
+    ]
+  }
+}
+{% endschema %}

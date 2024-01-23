@@ -1,0 +1,194 @@
+{%- assign selected_variant = product.selected_or_first_available_variant -%}
+{%- if product.tags contains 'has_louisiana_frame' -%}
+  {% assign frame_collection = collections['louisiana-rammer'] %}
+  {% assign variant_filter = '- Indramning' %}
+{%- elsif product.tags contains 'has_novictus_frame' -%}
+  {% assign frame_collection = collections['novictus-rammer'] %}
+{%- endif -%}
+
+{% assign orientation = 'custom' %}
+{%- if product.tags contains 'Portræt' -%}
+  {% assign orientation = 'portræt' %}
+{%- elsif product.tags contains 'Landskab' -%}
+  {% assign orientation = 'landskab' %}
+{%- elsif product.tags contains 'Kvadratisk' -%}
+  {% assign orientation = 'kvadratisk' %}
+{%- endif -%}
+
+{%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-frame{%- endcapture -%}
+{% comment %}
+{% assign option_name = 'general.frame.name' | t %}
+{% assign option_select = 'general.frame.select' | t %}
+{% assign none_label = 'general.frame.none_label' | t %}
+{% endcomment %}
+{% assign option_name = 'Ramme' %}
+{% assign option_select = 'Vælg ramme' %}
+{% assign none_label = 'Ingen ramme' %}
+
+<!-- TODO: make more robust? -->
+{%- if product.has_only_default_variant -%}
+  {%- for t in product.tags -%}
+    {%- if t contains 'Plakater' -%}
+    {% assign poster_size = t | remove: 'Plakater' | strip %}
+    {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- else -%}
+  {% assign poster_size = selected_variant.title %}
+{%- endif -%}
+
+<div class="frame-module">
+
+  <div class="ProductForm__Option">
+    <button type="button" class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">
+      <!-- Vælg ramme -->
+      <span class="ProductForm__OptionName">{{ option_name }}: <span class="ProductForm__SelectedValue">{{ option_select }}</span></span>
+      {%- render 'icon' with 'select-arrow' -%}
+    </button>
+  </div>
+
+  <div id="{{ popover_id }}" class="OptionSelector Popover Popover--withMinWidth" aria-hidden="true">
+    <header class="Popover__Header">
+      <button type="button" class="Popover__Close Icon-Wrapper--clickable" data-action="close-popover">{% render 'icon' with 'close' %}</button>
+      <span class="Popover__Title Heading u-h4">{{ option_name }}</span>
+    </header>
+
+    <div class="Popover__Content">
+      <div class="Popover__ValueList" data-scrollable>
+        {%- for frame in frame_collection.products -%}
+          {%- comment %}<locksmith:0b18>{% endcomment -%}
+            {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: frame, subject_parent: frame_collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+          {%- comment %}</locksmith:0b18>{% endcomment -%}
+          {% assign value = frame.title | split: '-' | last | trim %}
+          {% assign frame_size_found = false %}
+          {% assign price = false %}
+          {%- for frame_variant in frame.variants -%}
+            {%- if variant_filter -%}
+              {%- unless frame_variant.title contains variant_filter -%}
+                {%- continue -%}
+              {%- endunless -%}
+              {% assign frame_variant_option = frame_variant.option1 | remove: variant_filter | strip %}
+            {%- else -%}
+              {% assign frame_variant_option = frame_variant.option1 | strip %}
+            {%- endif -%}
+            {%- if frame_variant_option == poster_size and frame_variant.available -%}
+              {% assign price = frame_variant.price | money_without_trailing_zeros %}
+              {% assign frame_size_found = true %}
+            {%- endif -%}
+          {%- endfor -%}
+          <button type="button" class="Popover__Value Heading Link Link--primary u-h6"
+                    data-frame-id="{{ frame.id }}"
+                    data-value="{{ value }} + {{ price }}"
+                    data-action="select-value"
+                    data-is-frame="true"
+                    {%- unless frame_size_found -%} style="display:none"{% endunless %}>
+            {{ value }} {%-if price -%}+ {{ price }}{%- endif -%}
+            </button>
+        {%- endfor -%}
+        <!-- Also show option for nothing -->
+        <button type="button" class="Popover__Value Heading Link Link--primary u-h6"
+                data-frame-id="null"
+                data-value="{{ none_label }}"
+                data-action="select-value">
+        {{ none_label }}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="application/json" data-frames-json>
+    {
+      "poster_variant": {{ selected_variant | json }},
+      "poster_size": {{ poster_size | json }},
+      "has_only_default_variant": {{ product.has_only_default_variant | json }},
+      "orientation": {{ orientation | json }},
+      "popover_id": {{ popover_id | json }},
+      "collection": {{ frame_collection | json }},
+      "frames": [
+        {%- comment -%}<locksmith:1125>{% endcomment -%}
+          {%- assign locksmith_279c_forloop__size = 0 -%}{%- for frame in frame_collection.products -%}{%- capture var -%}{%- render 'locksmith-variables', scope: 'subject', subject: frame, variable: 'transparent' -%}{%- endcapture -%}{%- if var == 'true' -%}{%- assign locksmith_279c_forloop__size = locksmith_279c_forloop__size | plus: 1 -%}{%- endif -%}{%- endfor -%}{%- assign locksmith_279c_forloop__index = nil -%}
+        {%- comment %}</locksmith:1125>{%- endcomment -%}
+        {%- for frame in frame_collection.products -%}
+          {%- comment %}<locksmith:bfb5>{%- endcomment -%}
+            {%- capture var -%}{%- render 'locksmith-variables', scope: 'subject', subject: frame, subject_parent: frame_collection, variable: 'transparent' -%}{%- endcapture -%}{%- if var == "true" -%}{%- if locksmith_279c_forloop__index == nil -%}{%- assign locksmith_279c_forloop__index = 1 -%}{%- assign locksmith_279c_forloop__index0 = 0 -%}{%- else -%}{%- assign locksmith_279c_forloop__index = locksmith_279c_forloop__index | plus: 1 -%}{%- assign locksmith_279c_forloop__index0 = locksmith_279c_forloop__index0 | plus: 1 -%}{%- endif -%}{%- if locksmith_279c_forloop__index == 1 -%}{%- assign locksmith_279c_forloop__first = true -%}{%- else -%}{%- assign locksmith_279c_forloop__first = false -%}{%- endif -%}{%- if locksmith_279c_forloop__index == locksmith_279c_forloop__size -%}{%- assign locksmith_279c_forloop__last = true -%}{%- else -%}{%- assign locksmith_279c_forloop__last = false -%}{%- endif -%}{%- assign locksmith_279c_forloop__rindex = locksmith_279c_forloop__size | minus: locksmith_279c_forloop__index | minus: 1 -%}{%- assign locksmith_279c_forloop__rindex0 = locksmith_279c_forloop__size | minus: locksmith_279c_forloop__index0 | minus: 1 -%}{%- else -%}{%- continue -%}{%- endif -%}
+          {%- comment -%}</locksmith:bfb5>{% endcomment -%}
+          {%- assign found_image = null -%}
+          {%- unless orientation == 'custom' -%}
+            {%- for image in frame.images -%}
+              {%- assign image_alt = image.alt | remove: 'overlay_' -%}
+              {%- if image_alt == orientation -%}
+              {%- assign found_image = image | img_url: '1600x' -%}
+              {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endunless -%}
+          {
+            "id": {{ frame.id | json }},
+            "title": {{ frame.title | json }},
+            "variants": [
+              {%- liquid
+                assign remove_item_position = ''
+                for frame_variant in frame.variants
+                  if variant_filter
+                    unless frame_variant.title contains variant_filter
+                      assign remove_item_position = remove_item_position | append: ',' | append: forloop.index
+                     endunless
+                  endif
+                endfor
+                assign item_removes = remove_item_position | split: ','
+                assign count = 0
+              -%}
+
+              {%- for frame_variant in frame.variants -%}
+
+                {%- if variant_filter -%}
+                  {%- unless frame_variant.title contains variant_filter -%}
+                    {%- continue -%}
+                  {%- endunless -%}
+                {%- endif -%}
+
+
+                {% assign remove = false %}
+                {% assign index = forloop.index | minus: 1 %}
+                {%- for remove_item in item_removes -%}
+                  {%- if remove_item contains index -%}
+                    {%- assign remove = true -%}
+                    {% assign count = count | plus: 1 %}
+                    {% break %}
+                  {%- endif -%}
+                {%- endfor -%}
+
+                {% assign size = frame_variant.title | remove: variant_filter | strip %}
+                {%- assign custom_image = null -%}
+                {%- unless found_image -%}
+                  {%- for image in frame.images -%}
+                    {%- assign image_alt = image.alt | remove: 'overlay_' -%}
+                    {%- if image_alt == size -%}
+                    {%- assign custom_image = image | img_url: '1600x' -%}
+                    {%- break -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                {%- endunless -%}
+
+                {%- unless forloop.first -%}{% unless remove and count == 1 %},{%- endunless -%}{%- endunless -%}
+                {
+                  "id": {{ frame_variant.id | json }},
+                  "available": {{ frame_variant.available | json }},
+                  "compare_at_price": {{ frame_variant.compare_at_price | json }},
+                  "price": {{ frame_variant.price | json }},
+                  "option1": {{ frame_variant.option1 | json }},
+                  "title": {{ frame_variant.title | json }},
+                  "size": {{ size | json }},
+                  "image": {{ custom_image | json }}
+                }
+              {%- endfor -%}
+            ],
+            "image": {{ found_image | json }}
+          }
+          {%- unless locksmith_279c_forloop__last -%},{%- endunless -%}
+        {%- endfor -%}
+      ]
+    }
+  </script>
+
+</div>

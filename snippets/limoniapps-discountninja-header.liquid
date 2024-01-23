@@ -1,0 +1,19 @@
+{% comment %}V4.0.1 - May 2020
+This liquid snippet is used by Discount Ninja, an app from Limoni Apps
+Do not modify or remove this snippet, this snippet can be overwritten when the app is upgraded
+{% endcomment %}
+
+{% comment %}
+Add css to the head
+{% endcomment %}
+<noscript id="limoniapps-discountninja-deferred-css">
+{{ 'limoniapps-discountninja.css' | asset_url | stylesheet_tag }}
+</noscript>
+
+{% comment %}
+Save token for later use and load css (deferred)
+{% endcomment %}
+<script type="text/javascript">
+try { var a = window.location.href.replace(window.location.hash, ""); var b = [], hash; var c = a.slice(a.indexOf('?') + 1).split('&'); for (var i = 0; i < c.length; i++) {hash = c[i].split('='); b.push(hash[0]); b[hash[0]] = hash[1];} var d = b["token"]; var e = b["discountcode"]; var f = 'limoniapps-discountninja-'; if (d) sessionStorage.setItem(f + 'savedtoken', d); if (e) sessionStorage.setItem(f + 'saveddiscountcode', e); } catch (e) { var a = 0; }
+try { var loadLimoniAppsDiscountNinjaDeferredStyles=function(){var e=document.getElementById("limoniapps-discountninja-deferred-css"),n=document.createElement("div");n.innerHTML=e.textContent,document.head.appendChild(n),e.parentElement.removeChild(e)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(function(){window.setTimeout(loadLimoniAppsDiscountNinjaDeferredStyles,0)}):window.addEventListener("load",function(){window.setTimeout(loadLimoniAppsDiscountNinjaDeferredStyles,0)}); } catch (e) { var a = 0; }
+</script>

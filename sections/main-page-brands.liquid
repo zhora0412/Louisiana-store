@@ -1,0 +1,89 @@
+<section class="Container Container--narrow">
+
+    <header class="PageHeader">
+
+        <div class="SectionHeader SectionHeader--brands">
+
+            <h1 class="SectionHeader__Heading Heading u-h1 Text--bold">{{ page.title }}</h1>
+
+            <div class="SectionHeader__Alphabet">
+
+                {%- assign previousVendor = null -%}
+
+                {%- for vendor in shop.vendors -%}
+
+                    {%- assign previousVendorFirstLetter = previousVendor | slice: 0 | downcase -%}
+
+                    {%- assign currentVendorFirstLetter = vendor | slice: 0 | downcase -%}
+
+                    
+
+                    {%- if previousVendorFirstLetter != currentVendorFirstLetter -%}
+
+                        <a href="#letter-{{ currentVendorFirstLetter }}">{{ currentVendorFirstLetter | capitalize }}</a>
+
+                    {%- endif -%}
+
+
+
+                    {%- assign previousVendor = vendor -%}
+
+                {%- endfor -%}
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <div class="vendorlist">
+
+        {%- assign previousVendor = null -%}
+
+        {%- for vendor in shop.vendors -%}
+
+            {%- assign previousVendorFirstLetter = previousVendor | slice: 0 | downcase -%}
+
+            {%- assign currentVendorFirstLetter = vendor | slice: 0 | downcase -%}
+
+
+
+            {%- if previousVendor and previousVendorFirstLetter != currentVendorFirstLetter -%}
+
+                    </div>
+
+                </div>
+
+            {%- endif -%}
+
+            
+
+            {%- if previousVendorFirstLetter != currentVendorFirstLetter -%}
+
+                <div class="vendorlist__item" id="letter-{{ currentVendorFirstLetter }}">
+
+                    <div class="vendorlist__letter">{{ currentVendorFirstLetter | capitalize }}</div>
+
+                    <div class="vendorlist__vendors">
+
+            {%- endif -%}
+
+
+
+            <div class="vendorlist__vendor">{{- vendor | link_to_vendor -}}</div>
+
+            {%- assign previousVendor = vendor -%}
+
+        {%- endfor -%}
+
+    </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "Brands page"
+}
+{% endschema %}

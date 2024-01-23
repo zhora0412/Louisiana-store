@@ -1,0 +1,288 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_large": false
+      }
+    },
+    "16339487676fe39088": {
+      "type": "faq",
+      "blocks": {
+        "9ff3bc74-3031-4d1f-b389-341c85f8d660": {
+          "type": "separator",
+          "settings": {
+            "title": "Levering"
+          }
+        },
+        "d6d08912-747a-47af-aaf7-77ff3c4821af": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Fragt og levering",
+            "answer": "<p>Fragt er gratis på ordrer over 499 kroner, ved leveringer til GLS pakkeshops i Danmark.<br\/>Fragt på ordrer under 499 kroner er fra 39 kroner, med mindre andet er angivet (ved eksempelvis møbler).<br\/>Vi leverer til stort set hele verden.<br\/>Leveringstid 1-3 hverdage, men varerier alt efter hvor i verden pakken skal sendes til.<\/p><p>Din ordre sendes med GLS eller UPS. Med GLS kan du vælge levering til pakkeshop, firmaadresse og privat.<br\/>Er der ingen til stede på privatadressen, leveres pakken til nærmeste udleveringssted, og en advisering følger i postkassen.<br\/><br\/>OBS: Er der ikke plads i det valgte udleveringsstedet, bliver pakken flyttet til nærmeste udleveringssted, hvilket du automatisk adviseres om.<br\/><br\/>Der skal altid kvitteres for alle pakker ved modtagelsen mod fremvisning af gyldig legitimation. Forsendelsen vil typisk blive opbevaret i maksimalt 14 dage før pakken returneres til varelageret, som ikke leveret. Hvis pakken ikke afhentes regulerer vi refunderingen med 50 DKR for returfragten. <\/p><p>Er ordren oprindelig sendt til et andet land end Danmark, så vil refunderingen, ved en eventuel uafhentet pakke, blive fratrukket det samme, som det kostede i fragt, at få ordren tilsendt.<\/p>"
+          }
+        },
+        "da0ac1e0-33f7-483b-8eea-b2943358346f": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Leveringstid",
+            "answer": "<p>Din bestilling sendes generelt hurtigst muligt og i løbet af 1-3 hverdage efter din bestilling er modtaget hos os.<br\/><\/p><p>Bestillinger pakkes mandag til fredag mellem 09.00 og 16.00.<br\/><\/p><p>Vær opmærksom på at hvis du laver en bestilling i en weekend eller helligdagsperiode, regnes de 1-3 dage fra førstkommende hverdag.<br\/><\/p><p>GLS og UPS leveringstid er 1-3 hverdage, men varerier alt efter hvor i verden pakken skal sendes til.<br\/><\/p><p>Vi kan dog ikke give en 100% garanti. Når din ordre er pakket og klar til afsendelse, modtager du automatisk din kvittering pr. e-mail med tilhørende Track & Trace nummer, så du kan følge forsendelsen. <br\/><\/p><p>Vær opmærksom på, at din bestilling kan være delt op i flere forsendelser, alt afhængig af hvor varerne afsendes fra. <br\/><\/p><p>I så fald får du en separat e-mail med et link til et trackingnummer for hver enkelt pakke.<br\/><\/p><p>Ved produkter med specielle leveringsvilkår, vil leveringsinformationen være oplyst på produktsiden.<\/p>"
+          }
+        },
+        "9f40012f-7065-43c9-8adf-58f251b745e5": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Kundeservice",
+            "answer": "<p>Skulle der mod forventning opstå problemer eller har du spørgsmål, er du altid velkommen til at kontakte kundeservice:<br\/><br\/>Skriv gerne til os her, så svarer vi hurtigst muligt.<\/p><p><\/p><p>webshop@louisiana.dk<br\/><br\/>eller<br\/><br\/>Ring på +45 49190719.<\/p>"
+          }
+        },
+        "c1c78c72-02c2-4fdf-846e-dc76bdc2fac7": {
+          "type": "separator",
+          "settings": {
+            "title": "Returnering"
+          }
+        },
+        "ebda7c1c-f617-4d8f-acaf-7ad3d63a3183": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Fortrydelsesret",
+            "answer": "<p>Der gives 14 dages fuld returret på varer købt i vores webshop.<br\/>Perioden regnes fra den dag;<br\/><br\/>- Hvor du modtager ordren.<br\/><br\/>- Får den sidste vare i fysisk besiddelse, når det drejer sig om en aftale om flere forskellige varer, bestilt i én ordre, men leveres enkeltvis eller af flere omgange.<br\/><br\/>- Får det sidste parti, eller sidste del i fysisk besiddelse, når det drejer sig om aftale af levering af varer der består af flere partier\/dele.<br\/><br\/>- Den første vare i fysisk besiddelse, når det drejer sig om regelmæssig levering af varer over en bestemt periode.<br\/><br\/>Returneringsomkostninger skal du selv afholde.<br\/><br\/>Fortrydelse skal anmeldes til os senest 14 efter købet og fra fortrydelsen skal du senest 14 dage efter returnere forsendelsen. Meddelelsen skal gives pr. mail på webshop@louisiana.dk. I meddelelsen skal du gøre tydeligt opmærksom på, at du ønsker at benytte din fortrydelsesret. Ønsker du at sende varen retur til os, skal du udfylde den vedlagte Returseddel og sende varen til:<br\/><br\/>Louisiana Design Butik<br\/>Bakkegårdsvej 404<br\/>3050 Humlebæk<br\/><br\/>Du kan ikke fortryde ved blot at nægte modtagelse af varen, uden samtidig at give tydelig meddelelse herom.<\/p><p><\/p><p>Vælger du ikke at afhente din pakke, vil vi modregne fragten for returforsendelsen, som er 50 kr.<\/p><p><\/p>"
+          }
+        },
+        "0ea229cb-897f-4db5-8860-6595ad20d5f9": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Varer undtaget fortrydelsesretten",
+            "answer": "<p>Følgende varetyper indgår ikke i fortrydelsesretten:<\/p><p>- Varer, som er fremstillet efter forbrugerens specifikationer eller har fået et tydeligt personligt præg.<\/p><p>- Varer, som er bestillingsvarer (made-to-order).<\/p><p>- Forseglede varer, som af sundhedsbeskyttelses- eller hygiejnemæssige årsager ikke er egnet til at blive returneret, og hvor forseglingen er brudt efter leveringen.<br\/><br\/>- Varer, der grundet sin art bliver uløseligt blandet sammen med andre ved levering.<br\/><br\/>- Varer, hvor plomberingen er brudt.<br\/><br\/>- Udførte ikke-finansielle tjenesteydelser, hvis levering af tjenesteydelsen er påbegyndt med forbrugerens forudgående udtrykkelige samtykke og anderkendelse af, at fortrydelsesretten ophører, når tjenesteydelsen er fuldt udført.<br\/><br\/>- Levering af digitalt indhold, som ikke leveres på et fysisk medium, hvis udførelsen er påbegyndt med forbrugerens forudgående udtrykkelige samtykke og anerkendelse heraf, at vedkommende dermed mister sin fortrydelsesret.<br\/><br\/>- Aviser, tidskrifter eller magasiner dog undtaget abonnementsaftaler for sådanne publikationer.<br\/><br\/>- Varer, der forringes eller forældes hurtigt.<\/p>"
+          }
+        },
+        "eb4f28c0-9120-4f7d-808b-5ede9f71086b": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Returnering",
+            "answer": "<p>Du skal sende din ordre retur uden unødig forsinkelse og senest 14 dage efter, at du har gjort brug af din fortrydelsesret. Du skal afholde de direkte udgifter i forbindelse med returnering. Ved returnering er du ansvarlig for, at varen er pakket ordentligt ind. Du skal vedlægge en kopi af ordrebekræftelsen. Ekspeditionen går hurtigere, hvis du ligeledes udfylder og vedlægger vores Fortrydelsesformular.<br\/>Du bærer risikoen for varen fra tidpunket for varens levering og til, vi har modtaget den retur.<\/p><p><\/p><p>Ved returnering, reklamationer og benyttelse af fortrydelseretten sendes til:<\/p><p><\/p><p>Louisiana Design Butik<br\/>Bakkegårdsvej 402<br\/>3050 Humlebæk<\/p><p><\/p><p>Vi modtager ikke pakker sendt pr. efterkrav.<\/p>"
+          }
+        },
+        "4c396e30-2293-4f56-9e23-8082727282b1": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Varens stand ved returnering",
+            "answer": "<p>Du hæfter kun for eventuel forringelse af varens værdi, som skyldes anden håndtering, end hvad der er nødvendigt for at fastslå varens art, egenskaber og den måde, hvorpå den fungerer. Du kan med andre ord prøve varen, som hvis du prøvede den i en fysisk butik.<br\/><br\/>Hvis varen er prøvet udover, det ovenfor beskrevet, betragtes den som brugt. Dette betyder, at du ved fortrydelse af købet kun får en del eller intet af købsbeløbet retur, afhængig af varens handelsmæssige værdi på modtagelsestidspunktet - af returneringen. For at modtage hele købsbeløbet retur må du altså afprøve varen uden egentlig at tage den i brug.<\/p>"
+          }
+        },
+        "bee2e8e5-ed17-40c1-9c89-d95188f89ca9": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Tilbagebetaling",
+            "answer": "<p>Fortryder du dit køb, får du naturligvis det beløb du har indbetalt til os retur.<br\/>I tilfælde af en værdiforringelse, som du hæfter for, fratrækkes denne købs-beløbet.<br\/>Ved anvendelse af fortrydelsesretten, refunderes alle betalinger modtaget fra dig, herunder leveringsomkostninger (undtaget ekstra omkostninger som følge af dit valg af en anden leveringsform end den billigste form for standardlevering, som vi tilbyder), uden unødig forsinkelse og senest 14 dage fra den dato, hvor vi har modtaget meddelelse om din beslutning om at gøre brug af fortrydelsesretten. Tilbagebetaling gennemføres med samme betalingsmiddel, som du benyttede ved den oprindelige transaktion, med mindre du udtrykkeligt har indvilget i noget andet.<br\/>Vi kan tilbageholde beløbsrefunderingen, indtil vi har modtaget varen retur, med mindre du inden da har fremlagt dokumentation for at have returneret den.<\/p>"
+          }
+        },
+        "f17b5657-77ec-4d7b-acb1-651a543e2c86": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Reklamationsret",
+            "answer": "<p>Der gives 2 års reklamationsret i henhold til købeloven. Vores reklamationsret gælder for fejl i materiale og\/eller fabrikation. Du kan få varen repareret, ombyttet, pengene retur eller afslag i prisen, afhængig af den konkrete situation. Reklamationen gælder ikke fejl eller skader begået ved forkert håndtering af produktet\/ydelsen. Du skal reklamere i \"rimelig tid\" efter du har opdaget manglen\/fejlen. Louisiana Design Store vil dække returneringsomkostninger i et rimeligt omfang.<\/p><p><br\/>Ved returnering, reklamationer og benyttelse af fortrydelseretten sendes til:<\/p><p><\/p><p>Louisiana Design Butik<br\/>Bakkegårdsvej 404<br\/>3050 Humlebæk<br\/>Der modtages ikke forsendelser pr. efterkrav.<\/p>"
+          }
+        },
+        "c3762f84-de66-4fb4-b761-64e89c7b8444": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Refusion",
+            "answer": "<p>Hvis der er tale om refusion, bedes du medsende bankoplysninger i form af regnr og kontonr, så det aftalte beløb kan overføres. Disse oplysninger kan uden risiko oplyses pr. mail eller anden elektronisk form, da det ikke er følsomme oplysninger og kun vil blive anvendt til vores opfyldelse af refusionen.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9ff3bc74-3031-4d1f-b389-341c85f8d660",
+        "d6d08912-747a-47af-aaf7-77ff3c4821af",
+        "da0ac1e0-33f7-483b-8eea-b2943358346f",
+        "9f40012f-7065-43c9-8adf-58f251b745e5",
+        "c1c78c72-02c2-4fdf-846e-dc76bdc2fac7",
+        "ebda7c1c-f617-4d8f-acaf-7ad3d63a3183",
+        "0ea229cb-897f-4db5-8860-6595ad20d5f9",
+        "eb4f28c0-9120-4f7d-808b-5ede9f71086b",
+        "4c396e30-2293-4f56-9e23-8082727282b1",
+        "bee2e8e5-ed17-40c1-9c89-d95188f89ca9",
+        "f17b5657-77ec-4d7b-acb1-651a543e2c86",
+        "c3762f84-de66-4fb4-b761-64e89c7b8444"
+      ],
+      "disabled": true,
+      "settings": {
+        "primary_tab": true
+      }
+    },
+    "16339488119df9b0c9": {
+      "type": "faq",
+      "blocks": {
+        "eca2b440-cbd2-4c5a-8f49-cba005e6a9d1": {
+          "type": "separator",
+          "settings": {
+            "title": "Betingelser"
+          }
+        },
+        "ee4376f1-8f71-4df9-9585-4770644832f7": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Generelle oplysninger",
+            "answer": "<p>Louisiana Design Butik (Louisiana-Fonden)<br\/>Bakkegårdsvej 402<br\/>3050 Humlebæk<br\/>CVR nr.: 21358010<br\/>Telefon: +45 30801981<br\/>Email: webshop@louisiana.dk<\/p>"
+          }
+        },
+        "46728173-003c-47fa-bac5-ec96e270b1da": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Priser",
+            "answer": "<p>Alle priser er angivet i danske kroner (DKK).<\/p><p>Hos Louisiana Design Butik tager vi forbehold for eventuelle fejl i vores angivne priser. Endvidere forbeholder vi os ret til at ændre i priserne uden forudgående samtykke. Der tages forbehold for udsolgte varer.<\/p>"
+          }
+        },
+        "f273da66-17d3-4796-9888-491f5999cd7b": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Betaling",
+            "answer": "<p>Louisiana Design Butik modtager betaling med VISA-Dankort, VISA, VISA Electron, Mastercard, PayPal, MobilePay. Betalingen vil først blive trukket på din konto, når varen afsendes. Undtagen ved specialfremstillede produkter (made-to-order) hvor betalingen opkræves ved bestilling.<\/p><p>Alle beløb er i DKK. Danske kroner og incl. moms. Der tages forbehold for prisfejl og udsolgte\/udgåede varer.<\/p>"
+          }
+        },
+        "666bcf83-fa52-454f-9446-ddc28b6d837b": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Klagemuligheder – oversigt og links",
+            "answer": "<p>Har du en klage over et produkt, købt i vores Webshop, kan der sendes en klage til:<br\/>Konkurrence- og Forbrugerstyrelsens Center for Klageløsning<br\/>Carl Jacobsens Vej 35<br\/>2500 Valby<br\/>Link: www.forbrug.dk<br\/><br\/>Hvis du er forbruger med bopæl i et andet EU-land, kan du angive din klage i EU Kommissionens online klageplatform.<br\/>Platformen findes her: http:\/\/ec.europa.eu\/consumers\/odr\/<br\/>Angiver du en klage her, skal du oplyse vores E-mail adresse: webshop@louisiana.dk<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "eca2b440-cbd2-4c5a-8f49-cba005e6a9d1",
+        "ee4376f1-8f71-4df9-9585-4770644832f7",
+        "46728173-003c-47fa-bac5-ec96e270b1da",
+        "f273da66-17d3-4796-9888-491f5999cd7b",
+        "666bcf83-fa52-454f-9446-ddc28b6d837b"
+      ],
+      "disabled": true,
+      "settings": {
+        "primary_tab": false
+      }
+    },
+    "1633951542e3ec3da8": {
+      "type": "faq",
+      "blocks": {
+        "a03de56a-a0b4-4b58-98a8-990d8d76e89a": {
+          "type": "separator",
+          "settings": {
+            "title": "Privatlivspolitik"
+          }
+        },
+        "5fb5c23c-ad0b-4283-bc56-22069e95c918": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "1. Generelt",
+            "answer": "<p>1.1 Denne politik om behandling af personoplysninger (&quot;Persondatapolitik&quot;) beskriver, hvorledes Louisiana design Store (Louisiana-Fonden) indsamler og behandler oplysninger om dig.<\/p><p>1.2 Persondatapolitikken gælder for personoplysninger, som du afgiver til os, eller som vi indsamler via Louisiana design Stores hjemmesider og apps (&quot;Hjemmesiden&quot;).<\/p><p>1.3 Louisiana design Store er dataansvarlig for dine personoplysninger. Al henvendelse til Louisiana design Store kan ske via kontaktoplysningerne anført under pkt. 7.<\/p>"
+          }
+        },
+        "9e8e087d-ca1e-4c03-a913-334817badfc6": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "2. Hvilke personoplysninger indsamler vi, til hvilke formål og retsgrundlaget for behandlingen.",
+            "answer": "<p>2.1 Når du besøger Hjemmesiden, indsamler vi automatisk oplysninger om dig og din brug af Hjemmesiden, fx om hvilken type browser du bruger, hvilke søgetermer du bruger på Hjemmesiden, din IP-adresse, herunder din netværkslokation, og informationer om din computer med det formål at optimere brugeroplevelsen og Hjemmesidens funktion, samt foretage målrettet markedsføring, herunder retargeting via Facebook og Google. Denne behandling af oplysninger er nødvendig for, at vi kan varetage vores interesser i at forbedre Hjemmesiden samt vise dig relevante tilbud. Retsgrundlaget for behandlingen er EU Persondataforordningens art 6, stk. 1, litra b og f.<\/p><p>2.2 Når du køber et produkt, indsamler vi de oplysninger, du selv afgiver, fx navn, adresse, e-mailadresse, telefonnr., betalingsmåde, oplysninger om hvilke produkter du køber og eventuelt har returneret, leveringsønsker, samt oplysning om den IP-adresse, hvorfra bestilling er foretaget. Denne behandling af oplysninger sker med det formål, at vi kan levere de produkter, du har bestilt og i øvrigt opfylde vores aftale med dig, herunder for at kunne administrere dine rettigheder til at returnere og reklamere samt for at kunne kontakte dig i forbindelse med din bestilling. Oplysninger om dine køb kan vi også behandle for at overholde lovkrav, herunder til bogføring og regnskab, samt foretage målrettet markedsføring. Ved køb indsamles IP-adressen med det formål at kunne forhindre svig. Retsgrundlaget for behandlingen er EU Persondataforordningens art 6, stk. 1, litra b, c og f.<\/p><p>2.3 Når du tilmelder dig til vores nyhedsbrev, indsamler vi oplysning om dit navn, e-mailadresse og telefonnr. med det formål at kunne varetage vores interesse i at kunne levere nyhedsbreve til dig. Retsgrundlaget for behandlingen er EU Persondataforordningens art 6, stk. 1, litra b og f.<\/p><p>2.4 Når du opretter en brugerprofil eller tilmelder dig Louisiana Klubben, bliver du bedt om at oplyse fx navn, adresse, e-mailadresse, telefonnr. Derudover indsamler vi oplysninger under dit medlemskab, om din brug af kundeklubbens fordele, konkurrencer du deltager i m.m. Vi sammenholder disse oplysninger med andre oplysninger, vi har om dig, herunder oplysninger om, hvad du har købt og eventuelt returneret. Denne behandling foretager vi med det formål at kunne administrere dit medlemskab og levere dig de ydelser og tilbyde dig de fordele, der er forbundet med medlemskabet af Louisiana Klubben, samt for at varetage vores interesse i at kunne sende nyhedsbreve og foretage målrettet markedsføring. Retsgrundlaget for behandlingen er EU-Persondataforordningens art 6, stk. 1, litra b og f. Du kan ved tilmeldingen blive bedt om at give særskilt samtykke til elektronisk markedsføring.<\/p><p>2.5 Når du kommunikerer med os, indsamler vi de oplysninger du selv angiver, fx navn, adresse, e-mailadresse, telefonnr., samt indholdet af din henvendelse. Denne behandling af oplysninger sker med det formål, at vi kan levere den bedst mulige kundeservice. Retsgrundlaget for behandlingen er EU Persondataforordningens art 6, stk. 1, litra b og f.<\/p><p>2.6 Når du besøger vores Facebook-sider, indsamler og behandler vi og Facebook oplysninger (delt dataansvar) fx kontaktoplysninger typisk i form af navn. Formålet med behandlingen er at kunne markedsføre os over for potentielle kunder, besvare henvendelser og lignende beslægtede formål. Hvis du ikke ønsker, at dine oplysninger behandles, bedes du undlade at besøge vores Facebook-sider, da det på nuværende tidspunkt ikke er muligt for os at ændre på Facebooks indstillinger for opsamling af data. Retsgrundlaget for behandlingen er EU Persondataforordningens art 6, stk. 1, litra b og f.<\/p>"
+          }
+        },
+        "e772d208-b717-4554-a82b-9eab4e164be1": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "3.  Modtagere af Personoplysninger",
+            "answer": "<p>3.1 Oplysninger om dit navn, adresse, e-mail, telefonnummer samt ordrenummer og specifikke leveringsønsker videregives til den transportør, der forestår leveringen af de købte varer til dig. Ved køb af ikke lagerførte varer kan de nævnte oplysninger videregives til producenten eller sælgeren af den pågældende vare, som i så fald vil forestå leverancen.<\/p><p><em>Modtagere af Personoplysninger inden for eu\/eøs<\/em><\/p><p>3.2 Oplysninger kan overlades til eksterne samarbejdspartnere, der behandler oplysningerne på vores vegne. Vi anvender eksterne samarbejdspartnere til blandt andet teknisk drift og forbedringer af Hjemmesiden, udsendelse af nyhedsbreve samt målrettet markedsføring, herunder retargeting (fx anbefalinger baseret på dine præferencer), samt til din bedømmelse af vores virksomhed og produkter. Blandt andet videregiver vi oplysninger som fx ordrenummer til TrustPilot således, at der på vores vegne kan sendes en invitation til at vurdere os på TrustPilots hjemmeside. Vælger du at foretage en anmeldelse bliver TrustPilot dataansvarlig for de afgivne oplysninger. Disse virksomheder er databehandlere og under vores instruks og behandler data, som vi er dataansvarlig for. Databehandlerne må ikke anvende oplysningerne til andet formål end opfyldelse af aftalen med os, og er underlagt fortrolighed om disse. Vi har indgået skriftlige databehandleraftaler med alle databehandlere, der behandler personoplysninger på vores vegne.<br\/>Modtagere af Personoplysninger uden for eu\/eøs.<\/p><p>3.3 Oplysninger kan overlades til eksterne samarbejdspartnere, der behandler oplysningerne på vores vegne. Vi anvender eksterne samarbejdspartnere til blandt andet teknisk drift og forbedringer af Hjemmesiden, udsendelse af nyhedsbreve samt målrettet markedsføring, herunder retargeting (fx anbefalinger baseret på dine præferencer), samt til din bedømmelse af vores virksomhed og produkter. Disse virksomheder er databehandlere og under vores instruks og behandler data, som vi er dataansvarlig for. Databehandlerne må ikke anvende oplysningerne til andet formål end opfyldelse af aftalen med os, og er underlagt fortrolighed om disse. Vi har indgået skriftlige databehandleraftaler med alle databehandlere, der behandler personoplysninger på vores vegne.<\/p><p><em>Visse databehandlere er etableret i USA:<\/em><\/p><p>Google Analytics v\/Google LLC., The Rocket Science Group LLC d\/b\/a MailChimp, SurveyMonkey Inc og Zendesk, Inc. De fornødne garantier for overførsel af oplysninger til USA er sikret gennem databehandlerens certificering under EU-U.S. Privacy Shield, jfr. EU Persondataforordningens art. 45. <\/p><p>3.3.1 Kopi af Google LLC&#x27;s certificering kan findes her:<br\/>https:\/\/www.privacyshield.gov\/participant?id=a2zt000000001L5AAI<br\/><br\/>3.3.2 Kopi af SurveyMonkey Inc.’s certificering kan findes her:<br\/>https:\/\/www.privacyshield.gov\/participant?id=a2zt0000000Gn7zAAC&amp;status=Active<br\/><br\/>3.3.3 Kopi af Zendesk, Inc’s certificering kan findes her:<br\/>https:\/\/www.privacyshield.gov\/participant?id=a2zt0000000TOjeAAG&amp;status=Active<\/p>"
+          }
+        },
+        "18d482d3-508c-42d2-86c0-3b3e3b5f2142": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "4.  Dine rettigheder",
+            "answer": "<p>4.1 For at skabe åbenhed omkring behandlingen af dine oplysninger skal vi, som dataansvarlig, oplyse dig om dine rettigheder.<\/p><p><span style=\"text-decoration:underline\"><em>4.2 Indsigtsretten<\/em><\/span><br\/>4.2.1 Du er til enhver tid berettiget til at anmode os om oplysning om blandt andet, hvilke oplysninger vi har registreret om dig, hvilket formål registreringen tjener, hvilke kategorier af personoplysninger og modtagere af oplysninger der evt. måtte være, samt oplysning om hvorfra oplysningerne stammer.<\/p><p><br\/>4.2.2 Du har ret til at få udleveret en kopi af de personoplysninger, som vi behandler om dig. Hvis du ønsker en kopi af dine personoplysninger, skal du sende en skriftlig anmodning til webshop@louisiana.dk. Du kan blive bedt om at dokumentere, at du er den du giver dig ud for at være.<\/p><p><br\/><span style=\"text-decoration:underline\"><em>4.3 Retten til berigtigelse<\/em><\/span><br\/>4.3.1 Du har ret til at få urigtige personoplysninger om dig selv berigtiget af os. Såfremt du bliver opmærksom på, at der er fejl i de oplysninger, som vi har registreret om dig, opfordres du til at rette skriftlig henvendelse til os, så oplysningerne kan blive korrigeret.<\/p><p><br\/>4.3.2 Oplysninger, som vi har indsamlet i forbindelse med din oprettelse af en brugerprofil eller din tilmelding til Louisiana Klubben, har du selv mulighed for at korrigere via log-in til din brugerprofil.<\/p><p><br\/><span style=\"text-decoration:underline\"><em>4.4 Retten til sletning<\/em><\/span><br\/>4.4.1 I visse tilfælde har du ret til at få alle eller visse af dine personoplysninger slettet af os, fx hvis du tilbagekalder dit samtykke, og vi ikke har et andet retsgrundlag for at fortsætte behandlingen. I det omfang en fortsat behandling af dine oplysninger er nødvendig, fx for at vi kan overholde vores retlige forpligtelser, eller for at retskrav kan fastlægges, gøres gældende eller forsvares, er vi ikke forpligtede til at slette dine personoplysninger.<\/p><p><span style=\"text-decoration:underline\"><em>4.5 Retten til at begrænse behandlingen til opbevaring<\/em><\/span><br\/>4.5.1 Du har i visse tilfælde ret til at få begrænset behandlingen af dine personoplysninger til kun at bestå af opbevaring, fx hvis du mener, at de oplysninger, vi behandler om dig, ikke er korrekte.<\/p><p><span style=\"text-decoration:underline\"><em>4.6 Retten til dataportabilitet<br\/><\/em><\/span>4.6.1 Du har i visse tilfælde ret til at få personoplysninger, som du selv har givet os, udleveret i et struktureret, almindeligt anvendt og maskinlæsbart format og har ret til at overføre disse oplysninger til en anden dataansvarlig.<\/p><p><span style=\"text-decoration:underline\"><em>4.7 Retten til indsigelse<br\/><\/em><\/span>4.7.1 Du har til enhver tid ret til at gøre indsigelse mod vores behandling af dine personoplysninger, med henblik på direkte markedsføring, herunder den profilering der foretages for at kunne målrette vores direkte markedsføring.<\/p><p><br\/>4.7.2 Du har endvidere til enhver tid ret til af grunde, der vedrører din personlige situation at gøre indsigelse mod den behandling af dine personoplysninger, som vi foretager på grundlag af vores legitime interesser jfr. pkt. 2.1 og 2.3.<\/p><p><span style=\"text-decoration:underline\"><em>4.8 Retten til at tilbagekalde samtykke<\/em><\/span><br\/>4.8.1 Du har til enhver tid ret til at tilbagekalde et samtykke, du har givet os til en given behandling af personoplysninger, herunder til den profilering, der foretages af dig som medlem i Louisiana Klubben. Samtykke til nyhedsbreve og anbefalinger kan tilbagetrækkes enten via din brugerprofil, i bunden af det markedsføringsmateriale, du har modtaget, eller ved at kontakte os på webshop@louisiana.dk.<\/p><p><span style=\"text-decoration:underline\"><em>4.9 Retten til at klage<\/em><\/span><br\/>4.9.1 Du har til enhver tid ret til at indgive en klage til Datatilsynet, Borgergade 28, 5, 1300 København K over vores behandling af dine personoplysninger. Klage kan blandt andet indgives på mail dt@datatilsynet.dk eller telefon +45 33 19 32 00<\/p>"
+          }
+        },
+        "700e8b72-d4ab-440e-9fb2-2f40412e5d52": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "5. Sletning af persondata",
+            "answer": "<p>5.1 Oplysninger indsamlet om din brug af Hjemmesiden jfr. pkt. 2.1. anonymiseres, når du ikke har gjort brug af Hjemmesiden i 2 år.<\/p><p><br\/>5.2 Oplysninger indsamlet i forbindelse med køb du har gennemført på Hjemmesiden jfr. pkt. 2.2 vil som udgangspunkt blive anonymiseret 2 år efter ordren er afsluttet eller annulleret, medmindre du har en aktiv bruger jfr. pkt. 5.1. Oplysninger kan dog gemmes i længere tid, hvis vi har et legitimt behov for længere opbevaring, fx hvis det er nødvendigt for at retskrav kan fastlægges, gøres gældende eller forsvares, eller hvis opbevaring er nødvendig for, at vi kan opfylde lovkrav. Regnskabsmateriale opbevares i 5 år til udgangen af et regnskabsår for at opfylde bogføringslovens krav.<\/p><p><br\/>5.3 Oplysninger indsamlet i forbindelse med din tilmelding til vores nyhedsbrev slettes, når dit samtykke til nyhedsbrev trækkes tilbage. Oplysninger kan dog gemmes i længere tid, hvis vi har et legitimt behov for længere opbevaring, fx hvis det er nødvendigt for at retskrav kan fastlægges, gøres gældende eller forsvares, eller hvis opbevaring er nødvendig for, at vi kan opfylde lovkrav.<\/p><p><br\/>5.4 Oplysninger som vi har indsamlet i forbindelse med din oprettelse af en brugerprofil eller din tilmelding til vores kundeklub pkt. 2.4, vil vi automatisk slette såfremt du ikke har gjort brug af Hjemmesiden eller haft et aktivt medlemskab i 2 år.<\/p><p><br\/>5.5 Oplysninger indsamlet når du har udgivet eller ydet services på vores udgivelsesplatform jfr. pkt. 2.5 vil som udgangspunkt blive anonymiseret 2 år efter du har senest har haft en udgivelse eller service til salg, medmindre du har en aktiv bruger jfr. pkt. 5.1. Oplysninger kan dog gemmes i længere tid, hvis vi har et legitimt behov for længere opbevaring, fx hvis det er nødvendigt for at retskrav kan fastlægges, gøres gældende eller forsvares, eller hvis opbevaring er nødvendig for, at vi kan opfylde lovkrav. Regnskabsmateriale opbevares i 5 år til udgangen af et regnskabsår for at opfylde bogføringslovens krav.<\/p><p><br\/>5.6 Oplysninger indsamlet i forbindelse med, at du har kommunikeret med os jfr. pkt. 2.6, vil som udgangspunkt blive anonymiseret 2 år efter, at du har rettet henvendelse til os. Oplysninger kan dog gemmes i længere tid, hvis vi har et legitimt behov for længere opbevaring, fx hvis det er nødvendigt for at retskrav kan fastlægges, gøres gældende eller forsvares, eller hvis opbevaring er nødvendig for, at vi kan opfylde lovkrav.<br\/><br\/>5.7 Da de personoplysninger der afgives ved besøg på vores Facebook-sider jfr. pkt. 2.7, afgives af personen selv på vores offentligt tilgængelige side, vil oplysningerne i udgangspunktet ligge på siden så længe denne eksisterer.<\/p>"
+          }
+        },
+        "88601fc4-d05c-4d44-b5c8-800f296e266a": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "6. Sikkerhed",
+            "answer": "<p>6.1 Vi har gennemført passende tekniske og organisatoriske sikkerhedsforanstaltninger til beskyttelse mod, at personoplysninger hændeligt eller ulovligt tilintetgøres, fortabes, ændres eller forringes, samt mod, at de kommer til uvedkommendes kendskab eller misbruges.<br\/>6.2 Kun medarbejdere, der har et reelt behov for at få adgang til dine personoplysninger for at udføre deres arbejde, har lov til at tilgå disse.<\/p>"
+          }
+        },
+        "189ee596-00b2-4568-bf8b-d6572347bc52": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "7. Kontaktoplysninger",
+            "answer": "<p>7.1 Louisiana Design Butik (Louisiana-Fonden) er dataansvarlig for de persondata, som indsamles via Hjemmesiden. <br\/>Louisiana Design Store (Louisiana-Fonden) deler dataansvar med Facebook for de persondata, som indsamles via vores offentligt tilgængelige Facebook-sider.<\/p><p>7.2 Hvis du har spørgsmål eller bemærkninger til denne Persondatapolitik eller ønsker du at gøre brug af en eller flere af dine rettigheder beskrevet i pkt.4, kan du kontakte:<\/p><p>Louisiana Design Store (Louisiana-Fonden)<br\/>Bakkegårdsvej 402<br\/>3050 Humlebæk<br\/>Danmark <br\/>Tlf. nr.: +45 49190719<br\/>E-mail: webshop@louisiana.dk<\/p>"
+          }
+        },
+        "da943a23-04f2-498c-8a01-c55a664941b4": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "8. Ændringer i Persondatapolitikken",
+            "answer": "<p>8.1 Såfremt vi foretager væsentlige ændringer i Persondatapolitikken, vil du blive orienteret om dette ved udsendelse af information til din e-mailadresse. Dette vil ske i tilfælde af at du har en aktiv brugerprofil jfr. pkt. 5.4, eller en ordre som endnu ikke er anonymiseret jfr. pkt. 5.2. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a03de56a-a0b4-4b58-98a8-990d8d76e89a",
+        "5fb5c23c-ad0b-4283-bc56-22069e95c918",
+        "9e8e087d-ca1e-4c03-a913-334817badfc6",
+        "e772d208-b717-4554-a82b-9eab4e164be1",
+        "18d482d3-508c-42d2-86c0-3b3e3b5f2142",
+        "700e8b72-d4ab-440e-9fb2-2f40412e5d52",
+        "88601fc4-d05c-4d44-b5c8-800f296e266a",
+        "189ee596-00b2-4568-bf8b-d6572347bc52",
+        "da943a23-04f2-498c-8a01-c55a664941b4"
+      ],
+      "disabled": true,
+      "settings": {
+        "primary_tab": false
+      }
+    },
+    "0dbe0b35-e6c2-4020-9085-d8d13c9ff408": {
+      "type": "newsletter",
+      "settings": {
+        "section_size": "small",
+        "image": "shopify:\/\/shop_images\/Forside_NB_foto_1500x800_butik_2020_marts_1500x_88b74c79-878e-4d07-a6fa-8797f1a934af.jpg",
+        "text_color": "#ffffff",
+        "button_color": "#000000",
+        "subheading": "",
+        "title": "MODTAG VORES NYHEDSBREV",
+        "content": "<p>Når du tilmelder dig, vil du få information om vores nøje udvalgte designs. Vi tipper dig også, når vi har særlig gode tilbud.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16339487676fe39088",
+    "16339488119df9b0c9",
+    "1633951542e3ec3da8",
+    "0dbe0b35-e6c2-4020-9085-d8d13c9ff408"
+  ]
+}

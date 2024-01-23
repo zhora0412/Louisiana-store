@@ -1,0 +1,79 @@
+{%- assign selected_variant = product.selected_or_first_available_variant -%}
+{%- if product.tags contains 'has_louisiana_frame' -%}
+  {% assign frame_collection = collections['louisiana-rammer'] %}
+  {% assign variant_filter = '- Indramning' %}
+{%- elsif product.tags contains 'has_novictus_frame' -%}
+  {% assign frame_collection = collections['novictus-rammer'] %}
+{%- endif -%}
+
+{% assign orientation = 'custom' %}
+{%- if product.tags contains 'Portræt' -%}
+  {% assign orientation = 'portræt' %}
+{%- elsif product.tags contains 'Landskab' -%}
+  {% assign orientation = 'landskab' %}
+{%- elsif product.tags contains 'Kvadratisk' -%}
+  {% assign orientation = 'kvadratisk' %}
+{%- endif -%}
+
+
+{%- if product.has_only_default_variant -%}
+  {%- for t in product.tags -%}
+    {%- if t contains 'Plakater' -%}
+    {% assign poster_size = t | remove: 'Plakater' | strip %}
+    {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- else -%}
+  {% assign poster_size = selected_variant.title %}
+{%- endif -%}
+{% assign _media_frame_count = media_frame_count %}
+
+{% assign fake_media_position = media.position %}
+
+{%- for frame in frame_collection.products -%}
+
+  {%- assign found_image = null -%}
+
+  {%- for image in frame.images -%}
+    {%- assign image_alt = image.alt | remove: 'overlay_' -%}
+    {%- if orientation == 'custom' -%}
+      {%- if poster_size and image_alt == poster_size -%}
+        {%- assign found_image = image -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- else -%}
+      {%- if image_alt == orientation -%}
+        {%- assign found_image = image -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if found_image -%}
+
+    {%- assign _media_frame_count = _media_frame_count | plus: 1 -%}
+
+    {% assign fake_media_position = fake_media_position | plus: 1 %}
+
+    <div id="Media{{ media.id }}" tabindex="0" class="Product__SlideItem Product__SlideItem--image Carousel__Cell disable-zoom" data-media-type="image" data-media-id="{{ media.id }}" data-media-position="{{ fake_media_position }}" data-image-media-position="{% increment image_position %}">
+      <div class="AspectRatio AspectRatio--withFallback" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }};">
+        {% assign image_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+
+        <img class="Image--lazyLoad" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" data-expand="-100" alt="{{ media.alt | escape }}" data-max-width="{{ media.width }}" data-max-height="{{ media.height }}" data-original-src="{{ media | img_url: 'master' }}">
+        <span class="Image__Loader"></span>
+
+        <noscript>
+          <img src="{{ media | img_url: '800x' }}" alt="{{ media.alt | escape }}">
+        </noscript>
+      </div>
+      {%- capture supported_frame_sizes -%}{%- render 'image-size', sizes: '200,400,600,700,800,900,1000,1200,1400,1600', image: found_image -%}{%- endcapture -%}
+      {% assign frame_image_url = found_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+      <div class="frame-module__image frame-module__image--visible">
+        <img class="Image--lazyLoad" data-src="{{ frame_image_url }}" data-widths="[{{ supported_frame_sizes }}]" data-sizes="auto">
+      </div>
+    </div>
+  {%- endif -%}
+
+{%- endfor -%}
+
+{%- assign media_frame_count = _media_frame_count -%}

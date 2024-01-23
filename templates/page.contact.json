@@ -1,0 +1,45 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-contact",
+      "blocks": {
+        "642f07b7-60a0-44ca-9b50-24088fdeeafe": {
+          "type": "text",
+          "settings": {
+            "title": "Telefonnummer (valgfrit)",
+            "use_long_text": false,
+            "is_required": false
+          }
+        },
+        "5af7b150-09df-4491-a78d-d118092715d9": {
+          "type": "text",
+          "settings": {
+            "title": "Ordrenummer (valgfrit)",
+            "use_long_text": false,
+            "is_required": false
+          }
+        },
+        "afc2078d-759d-4507-b8c9-4670840ed004": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Emne",
+            "values": "Medlemskab, Produkt, En ordre, Andet"
+          }
+        }
+      },
+      "block_order": [
+        "642f07b7-60a0-44ca-9b50-24088fdeeafe",
+        "5af7b150-09df-4491-a78d-d118092715d9",
+        "afc2078d-759d-4507-b8c9-4670840ed004"
+      ],
+      "settings": {
+        "top_picture": "shopify:\/\/shop_images\/kim3292-edit-crop.jpg",
+        "mail_consent_show": true,
+        "mail_consent_label": "Vil du modtage nyheder fra os?"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

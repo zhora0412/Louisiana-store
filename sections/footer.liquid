@@ -1,0 +1,301 @@
+{%- if template.name == 'page' or template.name == 'blog' or template == 'customers/account' or template == 'customers/order' or template == 'customers/addresses' -%}
+  {%- assign add_top_margin = true -%}
+{%- else -%}
+  {%- assign add_top_margin = false -%}
+{%- endif -%}
+
+{%- if template == 'page.collections' -%}
+  {%- assign add_top_margin = false -%}
+{%- endif -%}
+
+<footer id="section-{{ section.id }}" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %} {% if add_top_margin %}Footer--withMargin{% endif %}" role="contentinfo">
+  <div class="Container Container--narrow">
+    {%- if section.blocks.size > 0 -%}
+      <div class="Footer__Inner">
+        {%- for block in section.blocks -%}
+          <div class="Footer__Block Footer__Block--{{ block.type }}" {{ block.shopify_attributes }}>
+            {%- case block.type -%}
+              {%- when 'text' -%}
+                {%- if block.settings.title != blank -%}
+                  <h2 class="Footer__Title Heading Heading--noTransform u-h6">{{ block.settings.title | escape }}</h2>
+                {%- endif -%}
+
+                {%- if block.settings.content != blank -%}
+                  <div class="Footer__Content Rte u-h5">
+                    {{ block.settings.content }}
+                  </div>
+                {%- endif -%}
+
+                {%- if block.settings.show_social_media -%}
+                  {% render 'social-media', class: 'Footer__Social HorizontalList--flipVertical', spacing: 'loose' %}
+                {%- endif -%}
+
+              {%- when 'links' -%}
+                {%- assign linklist = linklists[block.settings.menu] -%}
+
+                {%- if linklist != empty -%}
+                  <h2 class="Footer__Title Heading Heading--noTransform u-h5">{{ linklist.title | escape }}</h2>
+
+                  <ul class="Linklist">
+                    {%- for link in linklist.links -%}
+                      {%- comment %}<locksmith:d473>{% endcomment -%}
+                        {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: linklist, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                      {%- comment %}</locksmith:d473>{% endcomment -%}
+                      <li class="Linklist__Item">
+                        <a href="{{ link.url }}" class="Link Link--primary Link--underlineNative u-h5">{{ link.title | escape }}</a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+
+              {%- when 'newsletter' -%}
+                {%- if block.settings.title != blank -%}
+                  <h2 class="Footer__Title Heading Heading--noTransform u-h5">{{ block.settings.title | escape }}</h2>
+                {%- endif -%}
+
+                {%- form 'customer', id: 'footer-newsletter', class: 'Footer__Newsletter Newsletter Form' -%}
+                  {%- if form.posted_successfully? -%}
+                    <p class="Form__Alert Alert Alert--success">{{ 'footer.newsletter.success' | t }}</p>
+                  {%- else -%}
+                    {%- if form.errors -%}
+                      <p class="Form__Alert Alert Alert--error">{{ form.errors.messages['email'] }}</p>
+                    {%- endif -%}
+
+                    <input type="hidden" name="contact[tags]" value="newsletter">
+                    <input type="email" name="contact[email]" class="Form__Input Form__Input--bgWhite" aria-label="{{ 'footer.newsletter.input' | t }}" placeholder="{{ 'footer.newsletter.input' | t }}" required>
+                    <button type="submit" class="Form__Submit Button--noTransform Button Button--tertiary">{{ 'footer.newsletter.submit' | t }}</button>
+                  {%- endif -%}
+                {%- endform -%}
+
+                {%- if block.settings.content != blank -%}
+                  <div class="Footer__Content Rte">
+                    {{ block.settings.content }}
+                  </div>
+                {%- endif -%}
+            {%- endcase -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    <div class="Footer__Aside">
+      <div class="Footer__Copyright">
+        {%- liquid
+          if section.settings.show_country_selector and localization.available_countries.size > 1
+            assign show_country_selector = true
+          endif
+        -%}
+        
+        {%- if show_country_selector -%}
+          <div class="localization-selectors md-max:hidden">
+            {%- if show_country_selector -%}
+              {%- render 'localization-selector', type: 'country', placement: 'bottom-end', show_country_name: section.settings.show_country_name, show_country_flag: section.settings.show_country_flag, id_prefix: 'footer' -%}
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+        <a href="{{ routes.root_url }}" class="Footer__StoreName Heading Heading--noTransform u-h7 Link Link--secondary">Copyright Louisiana Museum of Modern Art</a>
+
+        {%- if section.settings.copyright_link -%}
+          {%- assign copyright_link = pages[section.settings.copyright_link] -%}
+          <a href="{{ copyright_link.url }}" class="Footer__StoreName Footer__StoreName--space Heading Heading--noTransform u-h7 Link Link--underlineNative Link--secondary">{{ copyright_link.title }}</a>
+        {%- endif -%}
+
+        {%- if section.settings.show_payment_methods -%}
+          {%- capture payment_methods -%}
+            {%- for type in shop.enabled_payment_types -%}
+              <li class="HorizontalList__Item">{{ type | payment_type_svg_tag }}</li>
+            {%- endfor -%}
+          {%- endcapture -%}
+
+          {%- if payment_methods != blank -%}
+            <ul class="Footer__PaymentList HorizontalList">
+              {{ payment_methods }}
+            </ul>
+          {%- endif -%}
+        {%- endif -%}
+
+        {%- if section.settings.go_to_link and section.settings.go_to_label -%}
+          {%- assign go_to_link = section.settings.go_to_link -%}
+          <a href="{{ go_to_link }}" class="Footer__GoTo Heading Heading--noTransform u-h4 Link Link--secondary">
+            {{ section.settings.go_to_label }}
+            {%- render 'icon' with 'long-arrow-right' -%}
+          </a>
+        {%- endif -%}
+        
+        {%- comment -%}<p class="Footer__ThemeAuthor">{{ powered_by_link }}</p>{%- endcomment -%}
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- add the style box if you want to see the palceholder-->
+<style type='text/css'>
+  @keyframes tbnPlaceHolderShimmer{0%{background-position:-468px 0}100%{background-position:468px 0}}.tbn-linear-background{animation-duration:1s;animation-fill-mode:forwards;animation-iteration-count:infinite;animation-name:tbnPlaceHolderShimmer;animation-timing-function:linear;background:#f6f7f8;background:linear-gradient(to right,#eee 8%,#ddd 18%,#eee 33%);background-size:1000px 104px;height:338px;position:relative;overflow:hidden}.tbn-placeholder-box-code{display:inline-block;width:200px;height:50px}.tbn-placeholder-box-but{display:inline-block;margin-left:5px;height:50px;width:75px}
+</style>
+
+<!-- place the script somewhere in the page -->
+<script type='text/javascript'>
+  if (!window.custom_carter_template) window.custom_carter_template = [];
+  window.custom_carter_template.push(
+    { 
+     id: "carter_membership_discount",
+     lang:{
+      enter_coupon:"Indtast medlemsnummer",
+      applying:"Tilføjer rabat",
+      apply_discount:"Anvend rabat",
+      subtotal:"Din pris kan ses i check ud"
+     },
+     template:`
+      <div class="tbn_dfm_container CartCoupon <%=inner_parent_class%>">
+        <input data-rcs="<%=id%>" type='text' value="<%=code%>" <%=(code_applying)?"disabled":""%> class='<%=input_class%> <%=(code_applying)?"disabled tbn_disabled":""%> tbn_js__cd_discount_value tbn_js__cd_discount_value_<%=id%> Form__Input Text--alignCenter' placeholder='Medlemsnummer'>
+        <button type='button' <%=(code_applying)?"disabled":""%> class='Button Button--secondary Text--alignCenter ProductForm__Item CartCoupon__Button <%=button_class%> <%=(code_applying)?"disabled tbn_disabled":""%> tbn_js__cd_apply_button tbn_js__cd_apply_button_<%=id%>' data-id="<%=id%>">
+          <%=(code_applying)?'Tilføjer rabat':'Anvend'%>
+        </button>
+      </div>
+      <div id="tipTemplate_<%=id%>" class='tbn_tooltip_dfm' <%=(!show_tooltip?"style='display:none'":"")%> >
+        <div data-popper-arrow="true" class="tbn_tooltip_dfm_arrow"></div>
+        <% if (error_text !== false) { %>
+        <%=error_text%>
+        <% } else if (nice_amount!== "" || normal_amount !== ""){ %>
+        <strong><%= ((nice_amount!=="")?nice_amount:normal_amount) %></strong>
+        <% } %>
+      </div>
+      `
+    }
+  );
+</script>
+
+{% schema %}
+{
+  "name": "Footer",
+  "class": "shopify-section--footer",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_payment_methods",
+      "label": "Show payment methods",
+      "info": "Payment method icons are automatically displayed based on your Shopify payment methods.",
+      "default": true
+    },
+    {
+      "type": "page",
+      "id": "copyright_link",
+      "label": "Link next to copyright"
+    },
+    {
+      "type": "text",
+      "id": "go_to_label",
+      "label": "Link to main website text"
+    },
+    {
+      "type": "url",
+      "id": "go_to_link",
+      "label": "Link to main website URL"
+    },
+    {
+      "type": "header",
+      "content": "Currency selector",
+      "info": "To add a currency, go to your [payment settings.](/admin/settings/payments)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_selector",
+      "label": "Show currency selector",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_name",
+      "label": "Show country name",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_flag",
+      "label": "Show country flag",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text / social media",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "About the shop"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_social_media",
+          "label": "Show social media",
+          "info": "Make sure to have properly configured your social media in the theme settings.",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "name": "Links",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu",
+          "info": "This menu won't show dropdown items."
+        }
+      ]
+    },
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Customers who subscribe will have their email address added to the \"accepts marketing\" [customer list](/admin/customers?query=&accepts_marketing=1)."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Newsletter"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>A short sentence describing what someone will receive by subscribing</p>"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "text",
+        "settings": {}
+      },
+      {
+        "type": "links",
+        "settings": {
+          "menu": "footer"
+        }
+      },
+      {
+        "type": "newsletter",
+        "settings": {}
+      }
+    ]
+  }
+}
+{% endschema %}

@@ -1,0 +1,168 @@
+{%- assign has_section_separator = false -%}
+
+{%- for block in section.blocks -%}
+  {%- if block.type == 'separator' or block.settings.sep_title != blank -%}
+    {%- assign has_section_separator = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- capture faq_content -%}
+  <div class="Faq">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'separator' -%}
+          <h2 class="Faq__Section Heading u-h3 Text--bold" {{ block.shopify_attributes }}>
+            <span class="Anchor" id="block-{{ block.id }}"></span>
+            {{- block.settings.title | escape -}}
+          </h2>
+
+        {%- when 'question' -%}
+          {%- if block.settings.sep_title != blank -%}
+            <h2 class="Faq__Section Heading u-h3 Text--bold" {{ block.shopify_attributes }}>
+              <span class="Anchor" id="block-{{ block.id }}"></span>
+              {{- block.settings.sep_title | escape -}}
+            </h2>
+          {%- endif -%}
+
+          <div class="Faq__Item {% if section.blocks[forloop.index].type == 'separator' or forloop.last %}Faq__Item--lastOfSection{% endif %}" aria-expanded="false" {{ block.shopify_attributes }}>
+
+            <div class="Faq__ItemWrapper">
+              <button class="Faq__Question u-h4">
+                {{ block.settings.title | escape }}
+                <span class="Faq__Icon">{% render 'icon' with 'plus' %}</span>
+              </button>
+
+              <div class="Faq__AnswerWrapper" aria-hidden="true">
+                <div class="Faq__Answer Rte Text--subdued">
+                  {{ block.settings.answer }}
+                </div>
+              </div>
+            </div>
+          </div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+{%- endcapture -%}
+
+<section class="Section Section--faq {% if section.settings.primary_tab %}primaryTab{%endif%}" data-section-type="faq" data-section-id="{{ section.id }}">
+  <div class="Container Container--narrow">
+
+    <div class="PageContent {% unless has_section_separator %}PageContent--narrow{% endunless %}">
+      {%- if has_section_separator -%}
+        <div class="PageLayout">
+          <div class="PageLayout__Section PageLayout__Section--secondary PageLayout__Section--sticky hidden-phone">
+            <ol class="FaqSummary {% if section.settings.primary_tab %}primaryTab{%endif%}">
+              {%- assign faq_separator_count = 0 -%}
+
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'separator' or block.settings.sep_title != blank -%}
+                  <li class="FaqSummary__Item {% if faq_separator_count == 0 %}is-active{% endif %}">
+                    <a href="#block-{{ block.id }}" class="FaqSummary__Link u-h5" data-offset="80">
+                      <span class="FaqSummary__LinkLabel">
+                        {%- if block.settings.sep_title != blank -%}
+                          {{ block.settings.sep_title | escape }}
+                        {%- else -%}
+                          {{ block.settings.title | escape }}
+                        {%- endif -%}
+
+                      </span>
+                    </a>
+                  </li>
+
+                  {%- assign faq_separator_count = faq_separator_count | plus: 1 -%}
+                {%- endif -%}
+              {%- endfor -%}
+            </ol>
+          </div>
+
+          <div class="PageLayout__Section">
+            {{- faq_content -}}
+          </div>
+        </div>
+      {%- else -%}
+        {{- faq_content -}}
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  const primeTab = document.querySelector('.Section--faq.primaryTab .FaqSummary');  
+  const primeTabContent = document.querySelector('.Section--faq.primaryTab .Faq');
+  
+  if(primeTab){
+    let slaveTabs = document.querySelectorAll('.Section--faq:not(.primaryTab) .FaqSummary li');  
+    let slaveTabsContent = document.querySelectorAll('.Section--faq:not(.primaryTab) .Faq > *');
+
+    for (var i = 0; i < slaveTabs.length; ++i) {
+      let tab = slaveTabs[i]; 
+      tab.classList.remove('is-active');
+      primeTab.appendChild(tab);
+
+    }
+
+    for (var i = 0; i < slaveTabsContent.length; ++i) {
+      let tabContent = slaveTabsContent[i]; 
+      primeTabContent.appendChild(tabContent);
+    }  
+  }  
+})
+</script>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    {
+          "type": "checkbox",
+          "id": "primary_tab",
+          "label": "Main tab",
+          "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "separator",
+      "name": "Section separator",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Default"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "sep_title",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Store information",
+      "name": "FAQ",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

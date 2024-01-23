@@ -1,0 +1,111 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_label": false
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "8361bd27-abab-47d0-9c15-8e6d7b8801c9": {
+          "type": "inventory",
+          "settings": {
+            "inventory_quantity_threshold": 3
+          }
+        },
+        "product_frame": {
+          "type": "product_frame",
+          "settings": {
+          }
+        },
+        "2b102c60-a313-481e-8370-dce7284cacf1": {
+          "type": "shopify:\/\/apps\/cw-back-in-stock-restock-alert\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "description",
+        "quantity_selector",
+        "variant_selector",
+        "8361bd27-abab-47d0-9c15-8e6d7b8801c9",
+        "product_frame",
+        "2b102c60-a313-481e-8370-dce7284cacf1",
+        "buy_buttons"
+      ],
+      "settings": {
+        "expected_delivery_time": "1-3 dages levering",
+        "image_size": "large",
+        "stack_images": true,
+        "show_thumbnails": false,
+        "enable_image_zoom": true,
+        "enable_video_looping": false,
+        "enable_frame_samples": true
+      }
+    },
+    "163397635729157f41": {
+      "type": "product-video",
+      "disabled": true,
+      "settings": {
+        "padding": 0
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "Du vil måske også synes om",
+        "show_product_info": true,
+        "show_vendor": true,
+        "show_color_swatch": false
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Du har for nyligt set på",
+        "show_product_info": true,
+        "show_vendor": true,
+        "show_color_swatch": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "163397635729157f41",
+    "product-recommendations",
+    "recently-viewed-products"
+  ]
+}

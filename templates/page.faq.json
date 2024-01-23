@@ -1,0 +1,181 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-faq",
+      "blocks": {
+        "4b33eba6-34c5-451d-a16c-99db367f815f": {
+          "type": "question",
+          "settings": {
+            "sep_title": "Medlemmer",
+            "title": "Får jeg rabat, når jeg er medlem af Louisiana Klubben?",
+            "answer": "<p>Ja. Når du har et klubkort til Louisiana, så får du 10% rabat på dit køb i webshoppen. <\/p><p>Du skal blot indtaste dit kortnummer, som du finder på bagsiden af dit Louisiana klubkort. Indtast kortnummeret i feltet på  på siden \"kurv\", som du kommer frem til, når du skal til at betale. Klik herefter på \"anvend\", så vil du se at der automatisk trækkes 10% fra prisen. <\/p><p>Hold også øje med særlige tilbud til medlemmer af Louisiana Klubben. <\/p><p>Din medlemsrabat kan ikke kombineres med andre rabatter, hvor der bruges en rabatkode.<\/p>"
+          }
+        },
+        "ce31870d-8da8-4862-97fa-81c841018115": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Hvordan bliver jeg medlem?",
+            "answer": "<p>Du køber et klubkort på <a href=\"https:\/\/www.louisiana.dk\/k%C3%B8b-klubkort-og-f%C3%A5-fri-entr%C3%A9\" title=\"https:\/\/www.louisiana.dk\/k%C3%B8b-klubkort-og-f%C3%A5-fri-entr%C3%A9\">Louisiana.dk<\/a>, som giver dig fri entre i et helt år samt en række andre medlemsfordele. <\/p>"
+          }
+        },
+        "1586101905211": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "sep_title": "Fragt og fri fragt",
+            "title": "Kan jeg få fri fragt?",
+            "answer": "<p>Vi tilbyder fri fragt til GLS pakkeshops i Danmark på alle køb over 499 kr. Der er ikke fri fragt, såfremt du ønsker hjemmelevering. Store varer, som eksempelvis møbler, kan være undtaget af fri fragt. I så fald vil det være anført i produktbeskrivelsen, at varen kun sendes med hjemmelevering.<\/p>"
+          }
+        },
+        "97190683-e61f-4982-b12f-c4f6970c8a97": {
+          "type": "question",
+          "settings": {
+            "sep_title": "Levering",
+            "title": "Forsendelse af møbler",
+            "answer": "<p>Vi anbefaler at du vælger hjemmelevering, når du køber møbler. Så undgår du omadressering i tilfælde af manglende plads i din pakkeshop.<\/p><p>På enkle møbler er det kun muligt at sende pakken med en hjemmelevering, da pakken er for lang\/for bred til en pakkeshop. I de tilfælde vil det være angivet i produktbeskrivelsen.<\/p><p><\/p><p><strong>Fragtmand<br\/><\/strong>Når du bestiller store møbler, bliver bestillingen leveret med fragtmand. Du bliver kontaktet direkte vedrørende leveringstidspunktet, så du kan sørge for at være hjemme på adressen ved levering. Hvis du alligevel ikke er hjemme på det aftalte leveringstidspunkt, kan din vare blive returneret til lageret. I så fald bedes du kontakte os direkte for at få hjælp.<\/p><p>Forsendelsen bliver leveret til kantstenen, eller, hvis dette ikke er muligt, så tæt på din leveringsadresse som muligt. Du er ansvarlig for at få leverancen fra kantstenen og ind i dit hjem. Denne service omfatter ikke fjernelse af emballage eller paller.<\/p><p><strong>International <\/strong><br\/>Er du interesseret i levering af møbler internationalt, så skriv til vores kundeservice (webshop@louisiana.dk) for at aftale fragtpris og leveringsdato.<\/p>"
+          }
+        },
+        "1586551284038": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Hvilke lande sender i til?",
+            "answer": "<p>Vi sender til hele verden. <\/p><p>Fragt omkostninger vil fremgå, når du indtaster din leveringsadresse. <\/p><p>Ønsker du levering af møbler internationalt, så kontakt venligst vores kundeservice (webshop@louisiana.dk) for at aftale fragtpris og leveringsdato.<\/p>"
+          }
+        },
+        "1586079206235": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Hvornår kan jeg forvente at min bestilling bliver leveret?",
+            "answer": "<p>Din bestilling sendes generelt hurtigst muligt og i løbet af 1-2 hverdage <em>efter <\/em>din bestilling er modtaget hos os.<br\/><\/p><p>Bestillinger pakkes mandag til fredag mellem 8:00 og 15:30.<br\/><\/p><p>Vær opmærksom på at hvis du laver en bestilling i en weekend eller helligdagsperiode, regnes de 1-2 dage fra førstkommende hverdag.<br\/><\/p><p>Når din ordre er behandlet modtager du en e-mail med din ordrebekræftelse, faktura samt Track & Trace nummer, så du kan følge din pakke.<br\/><\/p><p>Vær opmærksom på, at din bestilling kan være delt op i flere forsendelser, alt afhængig af hvor varerne afsendes fra. <br\/><\/p><p>I så fald får du en separat e-mail med et link til et trackingnummer for hver enkelt pakke.<br\/><\/p><p>Ved produkter med specielle leveringsvilkår, vil leveringsinformationen være oplyst på produktsiden. <br\/><\/p><p>I spidsbelastede perioder som jul, udsalg, klubkampagner eller lignende kan der forekomme længere leveringstid.<br\/><\/p><p>Vi pakker og leverer ikke varer ud på lørdage, søndage og helligdage.<\/p>"
+          }
+        },
+        "1586613585303": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "sep_title": "",
+            "title": "Hvordan overholder jeg reglerne om social distance, når jeg modtager min pakke?",
+            "answer": "<p>I forbindelse med myndighedernes skærpede anvisninger om social samvær, har fragtselskaberne indhørt en midlertidig dispensering af underskrift ved modtagelse af pakker. Du kan derfor roligt bestille online og samtidig overholde myndighedernes anvisning.<\/p>"
+          }
+        },
+        "1581341769365": {
+          "type": "question",
+          "settings": {
+            "sep_title": "Retur og bytte",
+            "title": "Kan jeg returnere mit køb i museumsbutikken?",
+            "answer": "<p>Ja. Har du købt en vare online på butik.louisiana.dk, så er du velkommen til at returnere varen i butikken. Husk blot at varen skal være ubrugt, i original emballage og med originale labels\/mærker. Husk at medbringe din kvittering eller en udfyldt returseddel.<\/p><p>Sådan foregår retur i butik:<br\/>- Du fremviser kvittering eller returseddel. <br\/>- Du får en kvittering for aflevering af varen.<br\/>- Varens pris, fratrukket eventuel rabat, vil blive refunderet umiddelbart efter vi har modtaget varen, uden unødig forsinkelse og senest 14 dage fra den dato, hvor vi har modtaget returvaren.<br\/>- Tilbagebetalingen gennemføres med samme betalingsmiddel og til samme konto, som blev benyttet ved det oprindelig køb.<br\/>- I tilfælde af en værdiforringelse, som du hæfter for, fratrækkes denne i den oprindelig pris.<\/p><p>Undtagelse:<br\/>I nogle tilfælde vil det dog ikke være muligt at returnere varen i butikken. Det kan f.eks. være store møbler. Det vil fremgå af produktbeskrivelsen på webshoppen, hvis varen undtagelsesvis ikke kan returneres i butikken. <\/p><p>Bytte?<br\/>Hvis du er interesseret i en anden vare i butikken, så er du naturligvis velkommen til at købe den i butikken. Direkte bytte fra en vare købt online til en anden vare i butikken, kan vi desværre ikke tilbyde.  <\/p><p>Du bedes være opmærksom på at vareudbuddet i butikken kan variere fra udbuddet i webshoppen. Vi kan derfor ikke garantere at en vare, som du har set i webshoppen, også er i butikken. Det kan enten skyldes, at butikken ikke har varen i sortiment eller at den er udsolgt.<\/p>"
+          }
+        },
+        "1581341778879": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Hvor lang fortrydelse eller byttefrist har jeg?",
+            "answer": "<p>Vi tilbyder 14<strong> <\/strong>dages fuld returret. Dette forudsætter, at varen er ubrugt og i original emballage med alle originale labels\/mærker intakte.<\/p><p><\/p><p>Ønsker du at få pengene retur for din vare ydes dette mod forevisning af faktura. <\/p><p><\/p><p>Læs evt. mere om fortrydelsesfrist, varer der er undtaget fra fortrydelsesretten og returnering under vores <a href=\"\/pages\/handelsbetingelser\" title=\"Handelsbetingelser\">Handelsbetingelser<\/a>.<\/p>"
+          }
+        },
+        "1586090142382": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Hvordan returnerer jeg mit køb?",
+            "answer": "<p>Ønsker du at sende varen retur til os, skal du udfylde den returseddel, som du har modtaget sammen med din pakke, og sende den udfyldte returseddel sammen med varen til:<br\/><br\/>Louisiana Design Butik<br\/>Bakkegårdsvej 404<br\/>3050 Humlebæk<\/p><p><strong>Køb returlabel<\/strong><br\/>Sender du pakken fra Danmark, har du mulighed for at købe en returlabel via vores returportal. Prisen er 39 DKK, som vil blive fratrukket i det beløb vi refunderer dig. Returlabelen sendes til dig på mail. Returlabelen kan kun anvendes til én forsendelse og til pakker, som kan sendes via GLS pakkeshops.<br\/><a href=\"https:\/\/butik.louisiana.dk\/pages\/returportal\" target=\"_blank\" title=\"Link til Louisiana returportal\">Køb returlabel her<\/a>.<\/p><p><strong>Returlabel fra et andet land end Danmark<\/strong><br\/>Ønsker du at købe en returlabel fra et andet land end Danmark, er prisen den samme, som da du fik pakken tilsendt. Prisen modregnes i refunderingen. Det er dog fortsat en forudsætning, at pakken kan sendes med GLS.<br\/><br\/><strong>Uafhentede pakker<\/strong><br\/>Du kan ikke fortryde ved blot at nægte modtagelse af varen, uden samtidig at give tydelig meddelelse herom. Hvis du vælger ikke at afhente din pakke, vil vi modregne fragten for returforsendelsen, som er 50 kr. for danske ordre.<\/p><p>Er ordren oprindelig sendt til et andet land end Danmark, så vil refunderingen, ved en eventuel uafhentet pakke, blive fratrukket det samme, som det kostede i fragt, at få ordren tilsendt.<\/p><p><\/p><p>Læs mere om returnering i vores <a href=\"\/pages\/handelsbetingelser\" title=\"Handelsbetingelser\">handelsbetingelser her<\/a>.<\/p>"
+          }
+        },
+        "f1a47b61-82a7-4e5d-9667-e98614a66353": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Bestillingsvarer",
+            "answer": "<p>Specialfremstillede møbler\/varer er ikke omfattet af fortrydelsesretten. Du kan ikke returnere møbler og produkter, der er bestilt specielt hjem til dig, da dette er designermøbler, og går under kategorien specialfremstillede møbler (made-to-order). <\/p><p><\/p><p>Bemærk: betalingen af specialfremstillede produkter opkræves ved bestilling.<\/p>"
+          }
+        },
+        "12790ea6-d174-4b3b-9175-a4940e366826": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "sep_title": "Gaver",
+            "title": "Hvornår skal julegaver senest bestilles?",
+            "answer": "<p><strong>GLS leveringer<\/strong>:<br\/>Vi anbefaler, at du bestiller dine julegaver inden d. 20. december kl. 13:30 for levering inden jul. <\/p><p><strong>Danske Fragtmænd leveringer<\/strong>:<br\/>Bestiller du møbler eller store rammer, som skal sendes med Danske Fragtmænd, så anbefaler vi, at bestillingen er lagt d. 21. december kl. 12:00 (middag) for levering inden jul.<\/p>"
+          }
+        },
+        "1586076905189": {
+          "type": "question",
+          "settings": {
+            "sep_title": "Gaver",
+            "title": "Kan jeg få mit køb pakket ind?",
+            "answer": "<p>Det er i øjeblikket ikke muligt at få gaver pakket ind. Hvor det er muligt i forhold til forsendelsen, vil vi dog lægge varen i en Louisiana pose. <\/p>"
+          }
+        },
+        "cb14a5b8-88fe-4691-bb6c-c771571e4daa": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Kan julegaver returneres?",
+            "answer": "<p>På julegaver er der udvidet returret. Julegaver købt i perioden 1. november til og med 24. december 2023 kan returneres indtil den 7. januar 2024.<\/p>"
+          }
+        },
+        "6e9a898e-f40d-4c8a-8ec4-8b1280645a9c": {
+          "type": "question",
+          "settings": {
+            "sep_title": "Min ordre",
+            "title": "Jeg har ikke modtaget en bestillingsbekræftelse pr. e-mail - er min ordre afgivet korrekt?",
+            "answer": "<p>Hvis ikke du har modtaget en e-mail med en bekræftelse på modtagelse af din ordre såvel som en bindende ordrebekræftelse, er det en god ide at tjekke, om den er havnet i din mappe med reklamer eller uønsket mail. Er dette ikke tilfældet er du velkommen til at kontakte vores kundeservice. Du bedes venligst have dit ordrenummer klar, inden du kontakter kundeservice telefonisk. Desuden anbefaler vi, at du tjekker, om du har angivet korrekt e-mailadresse, da fejl i denne ofte resulterer i manglende e-mails fra vores system.<\/p>"
+          }
+        },
+        "c7af4bc3-cc43-4839-a402-af3bde7884e9": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Der er en fejl ved varen - hvad gør jeg?",
+            "answer": "<p>Hvis der mod forventning skulle være fejl, mangler eller skader på dine varer ved modtagelse bedes du kontakte vores kundeservice og aftale nærmere, så bytter vi naturligvis til en anden vare. Når der er tale om fejl, mangler eller skader, refunderer vi portoen.<\/p><p><\/p><p><strong>Danske returpakker<\/strong><br\/>Sender du pakken fra Danmark, bedes du anvende vores returportal, hvor du får tilsendt en returlabel på mail. Bemærk, hvis forsendelsen er fordelt på flere pakker, så skal der bookes tilsvarende antal returlabels. Returportalen kan kun anvendes til forsendelser med GLS.<br\/><a href=\"https:\/\/butik.louisiana.dk\/pages\/returportal\" target=\"_blank\" title=\"Link til Louisiana returportal\">Gå til returportal her<\/a>.<\/p><p><\/p><p>Det er også muligt at få ombyttet varen i vores butik på Louisiana.<\/p><p><\/p><p><strong>Skader på pakker sendt med GLS<\/strong><br\/>Da vi skal reklamere skaden overfor GLS, vil vi gerne bede dig om at sende os fotografier af følgende: <\/p><p>- Fotos af pakkens udvendige flade – kassen i hele dens længde <br\/>- Fotos af den samlede indvendige beskyttelse<br\/>- Fotos af det skadede indhold<br\/>- Fotos af den påsatte GLS label på et af billederne af emballagen, hvor GLS pakkenummeret fremgår<\/p><p><strong>Skader på pakker sendt med UPS<\/strong><br\/>Da vi skal reklamere skaden overfor UPS, vil vi gerne bede dig om at sende os fotografier af følgende:<\/p><p>- Foto af den beskadigede vare <br\/>- Foto, der viser den beskadigede vare i den originale kasse med al den originale beskyttende polstring (billedet skal vise placeringen af varen og emballagen inden i kassen) <br\/>- Foto af det anvendte emballeringsmateriale inden i kassen (f.eks. bobleplast, skumplastkugler, papskillevægge osv.) <br\/>- Et nærbillede af forsendelsesmærkaten med sporingsnummeret (tag billedet så tæt på, at man kan læse sporingsnummeret, som typisk begynder med 1Z) <br\/>- To fotos, der viser alle seks sider af pakken (det ene foto bør vise toppen og to af siderne. Det andet foto bør vise bunden og de andre to sider.)<br\/>- Kassens dimensioner, herunder pakkens højde, længde og bredde<\/p><p><\/p><p>UPS kan få brug for at inspicere din beskadigede vareforsendelse. Du bedes derfor opbevare indpakningen mens UPS behandler vores erstatningskrav. <\/p>"
+          }
+        },
+        "e2a4218d-4b7c-4a66-b92a-6aa56cc11f73": {
+          "type": "question",
+          "settings": {
+            "sep_title": "Priser og sortiment",
+            "title": "Hvad har webshoppen i sortiment?",
+            "answer": "<p>Louisiana Design Butiks webshop har et kurateret udvalg af møbler, interiør, keramik, bøger og accessories. <\/p><p>Udvalget varierer fra den fysiske butik på museet. Derfor kan du opleve, at nogle varer er tilgængelig online men ikke i den fysiske butik – og omvendt. Det skyldes enten at varen er udsolgt eller at sortimentet simpelthen er forskellig. Hvis varen kun er tilgængelig online på grund af sortimentssammensætning, vil det fremgå af produktbeskrivelsen.<\/p>"
+          }
+        },
+        "9e708b82-9852-495b-9162-4efeed36631e": {
+          "type": "question",
+          "settings": {
+            "sep_title": "",
+            "title": "Tilbyder I prismatch?",
+            "answer": "<p>På butik.louisiana.dk tilbyder vi prismatch på møbler og lamper. <\/p><p><strong>Hvad kan jeg gøre, hvis jeg finder varen billigere et andet sted?<br\/><\/strong>Skulle du mod forventning finde en vare billigere hos en anden danskejet webshop, yder vi prismatch i købsøjeblikket. Du kan kontakte vores kundeservice på mail, med vedhæftet dokumentation (skærmprint\/screenprint) og link til varen, som det drejer sig om. Personalet skal vide hvornår og hvor du har set varen billigere, for at kunne hjælpe dig videre med din forespørgsel.<\/p><p><strong>Kriterier for prismatch<\/strong>:<br\/>- Varen skal sælges fra en danskejet webshop.<br\/>- Prisen skal gælde på handelstidspunktet.<br\/>- Varen skal være samme model, farve, og størrelse.<br\/>- Varen skal være på lager hos konkurrenten på tidspunktet for prismatchet.<br\/>- Varen må ikke være et slag-, kø-, medlems- eller åbningstilbud, være i begrænset antal eller engrosvarer.<br\/>- Prismatch er ekskl. fragt.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "4b33eba6-34c5-451d-a16c-99db367f815f",
+        "ce31870d-8da8-4862-97fa-81c841018115",
+        "1586101905211",
+        "97190683-e61f-4982-b12f-c4f6970c8a97",
+        "1586551284038",
+        "1586079206235",
+        "1586613585303",
+        "1581341769365",
+        "1581341778879",
+        "1586090142382",
+        "f1a47b61-82a7-4e5d-9667-e98614a66353",
+        "12790ea6-d174-4b3b-9175-a4940e366826",
+        "1586076905189",
+        "cb14a5b8-88fe-4691-bb6c-c771571e4daa",
+        "6e9a898e-f40d-4c8a-8ec4-8b1280645a9c",
+        "c7af4bc3-cc43-4839-a402-af3bde7884e9",
+        "e2a4218d-4b7c-4a66-b92a-6aa56cc11f73",
+        "9e708b82-9852-495b-9162-4efeed36631e"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

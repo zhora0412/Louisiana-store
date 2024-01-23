@@ -1,0 +1,29 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-not-found",
+      "disabled": true,
+      "settings": {
+        "title": "Ups!",
+        "content": "Siden er enten blevet flyttet eller fjernet. Du kan bruge søgefeltet i toppen til at søge igen, eller gå til forsiden.",
+        "image": "shopify:\/\/shop_images\/kay-bojesen-abe-lille-p_3x_315ace1a-5564-4b27-9a8c-67e8c2e951c1.jpg",
+        "back_to": "Gå til forsiden"
+      }
+    },
+    "fa60f379-46d8-48c2-bdc2-79d6dfa3acc4": {
+      "type": "newsletter",
+      "settings": {
+        "section_size": "small",
+        "text_color": "#ffffff",
+        "button_color": "#000000",
+        "subheading": "Keep updated",
+        "title": "Newsletter",
+        "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fa60f379-46d8-48c2-bdc2-79d6dfa3acc4"
+  ]
+}
