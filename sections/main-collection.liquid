@@ -27,9 +27,26 @@
           {%- comment %}<locksmith:4112>{% endcomment -%}
               {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
             {%- comment %}</locksmith:4112>{% endcomment -%}
-            <div class="Grid__Cell 1/{{ mobile_items_per_row }}--phone 1/{{ tablet_items_per_row }}--tablet-and-up 1/{{ desktop_items_per_row }}--{% if section.settings.filter_position == 'drawer' %}lap-and-up{% else %}desk{% endif %}">
-              {%- render 'product-item', product: product, show_product_info: true, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true -%}
-            </div>
+              {% assign splitTag = product.metafields.custom.split_option %}
+              {% if splitTag != blank %}
+                {% assign productOptions = product.options_by_name[splitTag] %}
+                {% for option in productOptions.values %}
+                  {% for variant in product.variants %}
+                    {% if variant.available %}
+                      {% if variant.options contains option %}
+              <div class="Grid__Cell 1/{{ mobile_items_per_row }}--phone 1/{{ tablet_items_per_row }}--tablet-and-up 1/{{ desktop_items_per_row }}--{% if section.settings.filter_position == 'drawer' %}lap-and-up{% else %}desk{% endif %}">
+                        {%- render 'product-variant-item', split_tag: splitTag, variant_option: option,  product: product, variant:variant, show_product_info: true, show_vendor: section.settings.show_vendor, show_labels: true -%}
+              </div>
+                        {% break %}
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              {% else %}
+                <div class="Grid__Cell 1/{{ mobile_items_per_row }}--phone 1/{{ tablet_items_per_row }}--tablet-and-up 1/{{ desktop_items_per_row }}--{% if section.settings.filter_position == 'drawer' %}lap-and-up{% else %}desk{% endif %}">
+                {%- render 'product-item', product: product, show_product_info: true, show_vendor: section.settings.show_vendor, show_color_swatch: section.settings.show_color_swatch, show_labels: true -%}
+              </div>
+              {% endif %}
           {%- endfor -%}
         </div>
       </div>
