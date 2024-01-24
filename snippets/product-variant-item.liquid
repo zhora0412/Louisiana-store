@@ -5,6 +5,13 @@
         sure that the image sizes we offer is not larger than the max size uploaded by the merchants.
         {%- endcomment -%}
 
+        {% if variant.featured_media != blank %}
+            {% assign galleryLink = '#Media' | append: variant.featured_media.id %}
+            {%- assign image_url = variant.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+        {% else %}
+            {%- assign image_url = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+        {% endif %}
+
         {%- if settings.product_image_size == 'natural' or use_horizontal -%}
             {%- assign use_natural_size = true -%}
         {%- else -%}
@@ -17,7 +24,7 @@
             {%- assign has_alternate_image = false -%}
         {%- endif -%}
 
-        <a href="{{ variant.url | within: collection | append: '#Media' | append: variant.featured_media.id }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}">
+        <a href="{{ variant.url | within: collection | append: galleryLink }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}">
             {%- if use_horizontal -%}
                 {%- assign max_width = 125 -%}
             {%- else -%}
@@ -41,12 +48,6 @@
                 {%- endif -%}
 
                 {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,400,600,700,800,900,1000,1200', image: product.featured_media -%}{%- endcapture -%}
-
-                {% if variant.featured_media != blank %}
-                     {%- assign image_url = variant.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                {% else %}
-                     {%- assign image_url = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                {% endif %}
 
                 <img class="ProductItem__Image Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ variant.featured_media.alt | escape }}" data-media-id="{{ variant.featured_media.id }}">
                 <span class="Image__Loader"></span>
@@ -98,9 +99,9 @@
                 {%- endif -%}
 
                 <h2 class="ProductItem__Title Heading Heading--noTransform u-h5">
-                    <a href="{{ variant.url | within: collection | append: '#Media' | append: variant.featured_media.id }}">{{ product.title }}</a>
+                    <a href="{{ variant.url | within: collection | append: galleryLink }}">{{ product.title }}</a>
                 </h2>
-                <h3 style="margin-bottom: 3px;"><a href="{{ variant.url | within: collection | append: '#Media' | append: variant.featured_media.id }}">{{ split_tag }} - {{ variant_option }}</a></h3>
+                <h3 style="margin-bottom: 3px;"><a href="{{ variant.url | within: collection | append: galleryLink }}">{{ split_tag }} - {{ variant_option }}</a></h3>
 
                 {%- if settings.show_product_rating -%}
                     {%- unless use_horizontal -%}
